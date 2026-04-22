@@ -32,6 +32,14 @@ Current initial narrative under evaluation:
 
 These two slides should evolve together as one story, not as isolated charts.
 
+## Data Caveats Learned In Session
+
+- The main Jira export uses 10 duplicated `Sprint` columns. Q1 analysis must read them together.
+- `Campo personalizado (Criticidad)` is empty across the current Q1 export.
+- Until that improves, severity-based storytelling should use `Prioridad` as a proxy and state that assumption explicitly.
+- The CSV does not cleanly separate internal QA work from implementation support work.
+- Any metric framed as `bugs evitados` is an inference unless a stricter source field is introduced.
+
 ## Working Canvas & Visual Direction
 
 - Active canvas: `1440x840`
