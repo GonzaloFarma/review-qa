@@ -1,0 +1,21 @@
+{
+  "name": "review-qa",
+  "version": "1.0.0",
+  "description": "QA Q1 slide workspace with local Playwright CLI checks for Chrome.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "pw:help": "playwright-cli --help",
+    "pw:chrome": "playwright-cli open --browser chrome",
+    "test": "playwright-cli --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/cli": "^0.1.8"
+  }
+}

@@ -1,0 +1,161 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.slide{width:960px;height:540px;background:#0F0A2E;font-family:'Segoe UI',system-ui,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:28px 44px 24px 50px}
+.accent-bar{position:absolute;left:0;top:0;width:5px;height:100%;background:#7C3AED}
+.orb1{position:absolute;width:340px;height:340px;border-radius:50%;background:#1A1050;top:-110px;right:-50px}
+.orb2{position:absolute;width:150px;height:150px;border-radius:50%;background:#130D40;bottom:-40px;left:80px}
+.z{position:relative;z-index:2}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.14em;color:#8B7CF6;text-transform:uppercase;margin-bottom:5px}
+.title{font-size:22px;font-weight:700;color:#fff;line-height:1.15}
+.title em{color:#34D399;font-style:normal}
+.chips{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.chip{background:rgba(255,255,255,.08);border:0.5px solid rgba(255,255,255,.15);color:#C4B5FD;font-size:10px;padding:4px 11px;border-radius:16px}
+.metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.mc{background:rgba(255,255,255,.06);border:0.5px solid rgba(255,255,255,.09);border-radius:9px;padding:10px 12px}
+.mc.g{background:rgba(52,211,153,.12);border-color:rgba(52,211,153,.25)}
+.mc.y{background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.22)}
+.mc.r{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.22)}
+.mc.b{background:rgba(125,211,252,.1);border-color:rgba(125,211,252,.22)}
+.mn{font-size:28px;font-weight:700;color:#fff;line-height:1}
+.mc.g .mn{color:#34D399}.mc.y .mn{color:#FBBF24}.mc.r .mn{color:#F87171}.mc.b .mn{color:#7DD3FC}
+.ml{font-size:9px;color:rgba(255,255,255,.45);margin-top:3px;line-height:1.3}
+.delta{font-size:9px;font-weight:600;margin-top:4px}
+.up{color:#34D399}.dn{color:#F87171}.eq{color:#FBBF24}
+.sec-eye{font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7DD3FC;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-bottom:12px}
+.bc{background:rgba(255,255,255,.05);border:0.5px solid rgba(255,255,255,.09);border-radius:8px;padding:10px 11px;display:flex;flex-direction:column;border-left:3px solid #555}
+.bc.hh{border-left-color:#F87171}.bc.hi{border-left-color:#FBBF24}.bc.me{border-left-color:#7DD3FC}
+.bct{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.bcp{font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.38)}
+.bdb{font-size:8px;font-weight:600;padding:1px 6px;border-radius:7px}
+.bdb.hh{background:rgba(248,113,113,.2);color:#FCA5A5}
+.bdb.hi{background:rgba(251,191,36,.18);color:#FDE68A}
+.bdb.me{background:rgba(125,211,252,.15);color:#BAE6FD}
+.bth{font-size:11px;font-weight:600;color:#EEF2FF;line-height:1.3;margin-bottom:4px}
+.bim{font-size:9.5px;color:rgba(255,255,255,.38);line-height:1.35;flex:1}
+.bst{font-size:9px;font-weight:600;margin-top:5px;display:flex;align-items:center;gap:3px}
+.sok{color:#34D399}.sbl{color:#F87171}.spr{color:#FBBF24}
+.dot{width:5px;height:5px;border-radius:50%;display:inline-block;flex-shrink:0}
+.dok{background:#34D399}.dbl{background:#F87171}.dpr{background:#FBBF24}
+.bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+.bb{border-radius:8px;padding:10px 13px}
+.bpurp{background:rgba(124,58,237,.2);border:0.5px solid rgba(167,139,250,.25)}
+.bteal{background:rgba(6,182,212,.12);border:0.5px solid rgba(52,211,153,.22)}
+.bamber{background:rgba(186,117,23,.15);border:0.5px solid rgba(251,191,36,.25)}
+.bbl{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px}
+.bpurp .bbl{color:#C4B5FD}.bteal .bbl{color:#6EE7B7}.bamber .bbl{color:#FDE68A}
+.bbt{font-size:10px;line-height:1.4}
+.bpurp .bbt{color:rgba(196,181,253,.75)}.bteal .bbt{color:rgba(110,231,183,.75)}.bamber .bbt{color:rgba(253,230,138,.75)}
+</style>
+<div class="slide">
+  <div class="orb1"></div><div class="orb2"></div><div class="accent-bar"></div>
+  <div class="top z">
+    <div>
+      <div class="eyebrow">Quality Assurance · Sprint 4 · 6 abr – 1 may 2026</div>
+      <div class="title">Lo que QA <em>protegió</em> este sprint</div>
+    </div>
+    <div class="chips">
+      <div class="chip">Farmacity · GetTheLook · TFM · Simpli</div>
+      <div class="chip">Review: 24 abr 2026</div>
+    </div>
+  </div>
+
+  <div class="metrics z">
+    <div class="mc g">
+      <div class="mn">16</div>
+      <div class="ml">Bugs detectados antes de llegar a usuarios</div>
+      <div class="delta up">↑ 4 vs Sprint 3</div>
+    </div>
+    <div class="mc">
+      <div class="mn">11</div>
+      <div class="ml">Resueltos y cerrados</div>
+      <div class="delta up">↑ 3 vs Sprint 3</div>
+    </div>
+    <div class="mc y">
+      <div class="mn">1</div>
+      <div class="ml">En rework — devuelto a proveedor</div>
+      <div class="delta eq">= Sprint 3</div>
+    </div>
+    <div class="mc r">
+      <div class="mn">1</div>
+      <div class="ml">Bloqueado — respuesta externa pendiente</div>
+      <div class="delta dn">↑ 1 vs Sprint 3</div>
+    </div>
+    <div class="mc b">
+      <div class="mn">18.3h</div>
+      <div class="ml">Horas QA invertidas en detección</div>
+      <div class="delta up">↑ 2.1h vs Sprint 3</div>
+    </div>
+  </div>
+
+  <div class="z">
+    <div class="sec-eye">Bugs críticos interceptados — qué hubiera pasado si llegaban a los clientes</div>
+    <div class="grid">
+      <div class="bc hh">
+        <div class="bct"><span class="bcp">The Food Market</span><span class="bdb hh">Crítico</span></div>
+        <div class="bth">Inicio de sesión completamente roto</div>
+        <div class="bim">Ningún cliente podía ingresar a su cuenta. Impacto directo en ventas.</div>
+        <div class="bst"><span class="dot dok"></span><span class="sok">Resuelto en 4 días</span></div>
+      </div>
+      <div class="bc hi">
+        <div class="bct"><span class="bcp">Farmacity</span><span class="bdb hi">Alto</span></div>
+        <div class="bth">Home principal con módulos rotos</div>
+        <div class="bim">Primera impresión del sitio dañada para todos los visitantes.</div>
+        <div class="bst"><span class="dot dok"></span><span class="sok">Resuelto en 4 horas</span></div>
+      </div>
+      <div class="bc hi">
+        <div class="bct"><span class="bcp">Farmacity</span><span class="bdb hi">Alto</span></div>
+        <div class="bth">Mensaje de stock incorrecto al cambiar sucursal</div>
+        <div class="bim">Clientes veían "sin stock" por error. Riesgo de abandono de carrito.</div>
+        <div class="bst"><span class="dot dok"></span><span class="sok">Resuelto en sprint</span></div>
+      </div>
+      <div class="bc hi">
+        <div class="bct"><span class="bcp">Farmacity</span><span class="bdb hi">Alto</span></div>
+        <div class="bth">Categoría entera sin contenido</div>
+        <div class="bim">Toda una sección de productos inaccesible. Pérdida directa de ventas.</div>
+        <div class="bst"><span class="dot dok"></span><span class="sok">Resuelto en sprint</span></div>
+      </div>
+      <div class="bc hi">
+        <div class="bct"><span class="bcp">The Food Market</span><span class="bdb hi">Alto</span></div>
+        <div class="bth">Página de ofertas con diseño roto</div>
+        <div class="bim">Landing de promociones con error visual en momento clave de conversión.</div>
+        <div class="bst"><span class="dot dok"></span><span class="sok">Resuelto en sprint</span></div>
+      </div>
+      <div class="bc hi">
+        <div class="bct"><span class="bcp">GetTheLook</span><span class="bdb hi">Alto</span></div>
+        <div class="bth">Nueva home con componente de video roto</div>
+        <div class="bim">Elemento clave de la nueva home no funcionaba antes del lanzamiento.</div>
+        <div class="bst"><span class="dot dok"></span><span class="sok">Resuelto en sprint</span></div>
+      </div>
+      <div class="bc me">
+        <div class="bct"><span class="bcp">Simpli</span><span class="bdb me">Medio</span></div>
+        <div class="bth">Promociones 2x1 invisibles para clientes</div>
+        <div class="bim">Ofertas activas que los usuarios no podían ver en el listado de productos.</div>
+        <div class="bst"><span class="dot dbl"></span><span class="sbl">Bloqueado — pendiente proveedor</span></div>
+      </div>
+      <div class="bc me">
+        <div class="bct"><span class="bcp">Simpli</span><span class="bdb me">Medio</span></div>
+        <div class="bth">Selectores de landing de categorías rotos</div>
+        <div class="bim">Navegación dañada en sección clave de descubrimiento de productos.</div>
+        <div class="bst"><span class="dot dpr"></span><span class="spr">En corrección por proveedor</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom z">
+    <div class="bb bpurp">
+      <div class="bbl">Objetivo Q2 — KR1.1</div>
+      <div class="bbt">62% de la capacidad del equipo asignada a iniciativas clave. Meta: 60–70%. Estamos en rango.</div>
+    </div>
+    <div class="bb bteal">
+      <div class="bbl">Costo evitado</div>
+      <div class="bbt">11 bugs cerrados antes de producción = 0 reclamos de clientes este sprint. Un bug en producción cuesta 10x más.</div>
+    </div>
+    <div class="bb bamber">
+      <div class="bbl">Sprint en curso</div>
+      <div class="bbt">Cierra 1 de mayo. Datos parciales. 5 incidencias aún activas en pipeline de validación.</div>
+    </div>
+  </div>
+</div>

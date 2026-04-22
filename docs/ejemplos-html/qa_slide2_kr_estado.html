@@ -1,0 +1,150 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.slide{width:960px;height:540px;background:#0F0A2E;font-family:'Segoe UI',system-ui,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:36px 48px 30px 54px}
+.accent-bar{position:absolute;left:0;top:0;width:5px;height:100%;background:#06B6D4}
+.orb1{position:absolute;width:350px;height:350px;border-radius:50%;background:#0D1A3A;top:-100px;right:-40px}
+.orb2{position:absolute;width:140px;height:140px;border-radius:50%;background:#0A1530;bottom:-30px;left:100px}
+.z{position:relative;z-index:2}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.14em;color:#22D3EE;text-transform:uppercase;margin-bottom:6px}
+.title{font-size:25px;font-weight:700;color:#fff;line-height:1.15}
+.title em{color:#A78BFA;font-style:normal}
+.chip{background:rgba(255,255,255,.08);border:0.5px solid rgba(255,255,255,.15);color:#BAE6FD;font-size:10px;padding:4px 11px;border-radius:16px}
+.okr-block{margin-bottom:14px}
+.okr-title{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:8px;padding-bottom:6px;border-bottom:0.5px solid rgba(255,255,255,.08)}
+.krs{display:grid;gap:7px}
+.krs2{grid-template-columns:1fr 1fr}
+.krs3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.kr{background:rgba(255,255,255,.05);border:0.5px solid rgba(255,255,255,.09);border-radius:9px;padding:11px 13px;display:flex;align-items:flex-start;gap:10px}
+.sem{width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:1px}
+.sem.g{background:rgba(52,211,153,.2);color:#34D399;border:1px solid rgba(52,211,153,.4)}
+.sem.y{background:rgba(251,191,36,.18);color:#FBBF24;border:1px solid rgba(251,191,36,.35)}
+.sem.r{background:rgba(248,113,113,.15);color:#F87171;border:1px solid rgba(248,113,113,.3)}
+.kr-body{}
+.kr-id{font-size:9px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:3px}
+.kr-text{font-size:11px;color:#E0E7FF;line-height:1.4;font-weight:500;margin-bottom:4px}
+.kr-detail{font-size:10px;color:rgba(255,255,255,.4);line-height:1.35}
+.kr-val{font-size:11px;font-weight:700;margin-top:4px}
+.val-g{color:#34D399}.val-y{color:#FBBF24}.val-r{color:#F87171}
+.prog-wrap{background:rgba(255,255,255,.08);border-radius:4px;height:4px;margin-top:5px;overflow:hidden}
+.prog{height:4px;border-radius:4px}
+.pg{background:#34D399}.py{background:#FBBF24}.pr{background:#F87171}
+.legend{display:flex;gap:16px;margin-top:14px}
+.li{display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,.4)}
+.ld{width:8px;height:8px;border-radius:50%}
+</style>
+<div class="slide">
+  <div class="orb1"></div><div class="orb2"></div><div class="accent-bar"></div>
+  <div class="top z">
+    <div>
+      <div class="eyebrow">Quality Assurance · OKRs Q2 2026</div>
+      <div class="title">Dónde estamos <em>parados</em></div>
+    </div>
+    <div class="chip">Estado parcial · Sprint 4 en curso</div>
+  </div>
+
+  <div class="z okr-block">
+    <div class="okr-title">OKR 1 — Implementación efectiva de iniciativas priorizadas</div>
+    <div class="krs krs3">
+      <div class="kr">
+        <div class="sem g">✓</div>
+        <div class="kr-body">
+          <div class="kr-id">KR1.1 · Capacity</div>
+          <div class="kr-text">60–70% de capacity destinada a iniciativas priorizadas</div>
+          <div class="kr-val val-g">62.1% asignado</div>
+          <div class="prog-wrap"><div class="prog pg" style="width:62%"></div></div>
+          <div class="kr-detail">742.5 hs disponibles · 461 hs asignadas. En rango exacto.</div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div class="kr-body">
+          <div class="kr-id">KR1.2 · Friends & Family</div>
+          <div class="kr-text">100% testeo One Vision Web validado antes del deploy</div>
+          <div class="kr-val val-y">En progreso</div>
+          <div class="prog-wrap"><div class="prog py" style="width:45%"></div></div>
+          <div class="kr-detail">TQD-827 activo. Workspace pre-productivo configurado.</div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div class="kr-body">
+          <div class="kr-id">KR1.3 · Iniciativas alto impacto</div>
+          <div class="kr-text">2+ iniciativas de alto impacto por foco en producción</div>
+          <div class="kr-val val-y">Parcial por foco</div>
+          <div class="prog-wrap"><div class="prog py" style="width:50%"></div></div>
+          <div class="kr-detail">FARMA: carrito abandonado pendiente · GTL: home validada</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="z okr-block">
+    <div class="okr-title">OKR 2 — Calidad del flujo end-to-end</div>
+    <div class="krs krs3">
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div class="kr-body">
+          <div class="kr-id">KR2.1 · Participación temprana QA</div>
+          <div class="kr-text">60% de iniciativas con análisis QA desde el inicio</div>
+          <div class="kr-val val-y">En seguimiento</div>
+          <div class="prog-wrap"><div class="prog py" style="width:55%"></div></div>
+          <div class="kr-detail">Incorporando criterios de aceptación desde análisis.</div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem g">✓</div>
+        <div class="kr-body">
+          <div class="kr-id">KR2.4 · Cumplimiento sprint</div>
+          <div class="kr-text">75–85% de cumplimiento estimado por sprint</div>
+          <div class="kr-val val-g">68.8% sprint 4 parcial</div>
+          <div class="prog-wrap"><div class="prog pg" style="width:69%"></div></div>
+          <div class="kr-detail">11 de 16 bugs cerrados. Sprint aún en curso hasta 1 may.</div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem r">!</div>
+        <div class="kr-body">
+          <div class="kr-id">KR2.3 · Predictibilidad</div>
+          <div class="kr-text">75% historias completadas vs planificadas por sprint</div>
+          <div class="kr-val val-r">Riesgo activo</div>
+          <div class="prog-wrap"><div class="prog pr" style="width:30%"></div></div>
+          <div class="kr-detail">1 bloqueado por Infra · 1 rework · sprint no cerrado aún.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="z okr-block">
+    <div class="okr-title">OKR 3 — Innovación y automatización</div>
+    <div class="krs krs2">
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div class="kr-body">
+          <div class="kr-id">KR3.1 · Automatización</div>
+          <div class="kr-text">Reducir carga operativa manual mediante automatización</div>
+          <div class="kr-val val-y">IN DEV</div>
+          <div class="prog-wrap"><div class="prog py" style="width:20%"></div></div>
+          <div class="kr-detail">TQD-802 — Test automático de regresión en desarrollo activo.</div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div class="kr-body">
+          <div class="kr-id">KR3 · Capacitación LLMs</div>
+          <div class="kr-text">Innovación aplicada con APIs de inteligencia artificial</div>
+          <div class="kr-val val-y">En curso</div>
+          <div class="prog-wrap"><div class="prog py" style="width:30%"></div></div>
+          <div class="kr-detail">TQD-840/841 — Capacitación Devs en APIs de LLMs activa.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend z">
+    <div class="li"><div class="ld" style="background:#34D399"></div>En rango / cumplido</div>
+    <div class="li"><div class="ld" style="background:#FBBF24"></div>En progreso / atención</div>
+    <div class="li"><div class="ld" style="background:#F87171"></div>Riesgo activo</div>
+  </div>
+</div>

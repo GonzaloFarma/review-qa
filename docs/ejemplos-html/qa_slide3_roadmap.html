@@ -1,0 +1,124 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.slide{width:960px;height:540px;background:#0F0A2E;font-family:'Segoe UI',system-ui,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:36px 48px 30px 54px}
+.accent-bar{position:absolute;left:0;top:0;width:5px;height:100%;background:#34D399}
+.orb1{position:absolute;width:320px;height:320px;border-radius:50%;background:#0A1F12;top:-100px;right:-40px}
+.orb2{position:absolute;width:130px;height:130px;border-radius:50%;background:#0A1A10;bottom:-30px;left:120px}
+.z{position:relative;z-index:2}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.14em;color:#34D399;text-transform:uppercase;margin-bottom:6px}
+.title{font-size:25px;font-weight:700;color:#fff;line-height:1.15}
+.title em{color:#FBBF24;font-style:normal}
+.chip{background:rgba(255,255,255,.08);border:0.5px solid rgba(255,255,255,.15);color:#6EE7B7;font-size:10px;padding:4px 11px;border-radius:16px}
+.cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px}
+.col{display:flex;flex-direction:column;gap:7px}
+.col-title{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;padding-bottom:6px;border-bottom:0.5px solid rgba(255,255,255,.1)}
+.ct-g{color:#34D399}.ct-y{color:#FBBF24}.ct-p{color:#C4B5FD}
+.item{background:rgba(255,255,255,.05);border:0.5px solid rgba(255,255,255,.09);border-radius:8px;padding:10px 12px}
+.item-top{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.itag{font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px;flex-shrink:0}
+.tg{background:rgba(52,211,153,.18);color:#6EE7B7}
+.ty{background:rgba(251,191,36,.16);color:#FDE68A}
+.tp{background:rgba(167,139,250,.18);color:#C4B5FD}
+.idate{font-size:9px;color:rgba(255,255,255,.3);margin-left:auto}
+.itext{font-size:11px;color:#E0E7FF;font-weight:500;line-height:1.35;margin-bottom:3px}
+.isub{font-size:10px;color:rgba(255,255,255,.38);line-height:1.3}
+.risks-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
+.risk{background:rgba(248,113,113,.08);border:0.5px solid rgba(248,113,113,.2);border-radius:8px;padding:10px 13px;display:flex;align-items:flex-start;gap:8px}
+.risk-icon{font-size:14px;flex-shrink:0;margin-top:1px}
+.risk-title{font-size:11px;font-weight:600;color:#FCA5A5;margin-bottom:2px}
+.risk-sub{font-size:10px;color:rgba(252,165,165,.6);line-height:1.3}
+.closing{background:rgba(52,211,153,.08);border:0.5px solid rgba(52,211,153,.2);border-radius:9px;padding:12px 16px;text-align:center}
+.closing-text{font-size:13px;font-weight:600;color:#6EE7B7;line-height:1.5}
+.closing-sub{font-size:10px;color:rgba(110,231,183,.55);margin-top:3px}
+</style>
+<div class="slide">
+  <div class="orb1"></div><div class="orb2"></div><div class="accent-bar"></div>
+  <div class="top z">
+    <div>
+      <div class="eyebrow">Quality Assurance · Próximos 30 días</div>
+      <div class="title">Qué viene y <em>qué necesitamos</em></div>
+    </div>
+    <div class="chip">Roadmap Q2 2026</div>
+  </div>
+
+  <div class="cols z">
+    <div class="col">
+      <div class="col-title ct-g">En ejecución ahora</div>
+      <div class="item">
+        <div class="item-top"><span class="itag tg">FARMA</span><span class="idate">Sprint 4</span></div>
+        <div class="itext">Carrito abandonado con regionalización</div>
+        <div class="isub">FARMA-4817 · Bloque 1 QA en curso, Bloques 2–3 pendientes de entorno</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="itag tg">FARMA</span><span class="idate">Sprint 4</span></div>
+        <div class="itext">Friends & Family — One Vision Web</div>
+        <div class="isub">TQD-827 · Workspace pre-productivo activo, validación en progreso</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="itag tg">CROSS</span><span class="idate">Sprint 4</span></div>
+        <div class="itext">Pruebas de regresión cross-plataforma</div>
+        <div class="isub">TQD-831/832/833/834 · Cobertura en FARMA, GTL, TFM, Simpli</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-title ct-y">Próximo sprint (mayo)</div>
+      <div class="item">
+        <div class="item-top"><span class="itag ty">FARMA</span><span class="idate">Sprint 5</span></div>
+        <div class="itext">Prescripción parcial — flujo "quemado"</div>
+        <div class="isub">FARMA-4853 · Análisis completo, suite de 6 bloques lista para ejecutar</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="itag ty">FARMA</span><span class="idate">Sprint 5</span></div>
+        <div class="itext">Promesa variable — Regio unificada</div>
+        <div class="isub">TQD-816 · Desbloqueado cuando Infra confirme fallback en availableDeliveryWindows</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="itag ty">CROSS</span><span class="idate">Sprint 5</span></div>
+        <div class="itext">Libro de quejas — modificaciones FARMA</div>
+        <div class="isub">TQD-842 · En sprint backlog, baja prioridad, no bloquea</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col-title ct-p">Automatización (Q2)</div>
+      <div class="item">
+        <div class="item-top"><span class="itag tp">AIDE</span><span class="idate">Q2 2026</span></div>
+        <div class="itext">Test automático de regresión Playwright</div>
+        <div class="isub">TQD-802 · IN DEV · Nivel 1: contratos por flujo crítico. Primer caso: FARMA-4817</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="itag tp">CROSS</span><span class="idate">Q2 2026</span></div>
+        <div class="itext">Capacitación en APIs de LLMs</div>
+        <div class="isub">TQD-840/841 · Equipo Devs en formación para innovación aplicada al pipeline</div>
+      </div>
+      <div class="item">
+        <div class="item-top"><span class="itag tp">META</span><span class="idate">KR3.1</span></div>
+        <div class="itext">Objetivo: reducir carga manual en 90%</div>
+        <div class="isub">Automatizar flujos críticos de regresión = menos tiempo QA manual por sprint</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="risks-row z">
+    <div class="risk">
+      <div class="risk-icon">⚠</div>
+      <div>
+        <div class="risk-title">Riesgo activo: Bloqueados por Infracommerce</div>
+        <div class="risk-sub">TQD-816 y TQD-829 dependen de respuesta externa. Sin confirmación no se puede cerrar QA. Requiere escalada.</div>
+      </div>
+    </div>
+    <div class="risk">
+      <div class="risk-icon">⚠</div>
+      <div>
+        <div class="risk-title">Riesgo activo: Entorno QA para Bloques 2 y 3</div>
+        <div class="risk-sub">FARMA-4817 Bloques 2–3 no pueden ejecutarse sin acceso confirmado al entorno. Pendiente confirmación de IT.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="closing z">
+    <div class="closing-text">Cada flujo crítico automatizado este trimestre es un incidente menos en producción el próximo.</div>
+    <div class="closing-sub">Equipo QA · Farmacity Group · Q2 2026</div>
+  </div>
+</div>

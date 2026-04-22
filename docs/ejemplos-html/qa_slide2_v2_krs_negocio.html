@@ -1,0 +1,147 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.slide{width:960px;height:540px;background:#0F0A2E;font-family:'Segoe UI',system-ui,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:28px 44px 24px 50px}
+.accent-bar{position:absolute;left:0;top:0;width:5px;height:100%;background:#06B6D4}
+.orb1{position:absolute;width:300px;height:300px;border-radius:50%;background:#0D1A3A;top:-90px;right:-40px}
+.orb2{position:absolute;width:130px;height:130px;border-radius:50%;background:#0A1530;bottom:-30px;left:100px}
+.z{position:relative;z-index:2}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.14em;color:#22D3EE;text-transform:uppercase;margin-bottom:5px}
+.title{font-size:22px;font-weight:700;color:#fff;line-height:1.15}
+.title em{color:#A78BFA;font-style:normal}
+.chip{background:rgba(255,255,255,.08);border:0.5px solid rgba(255,255,255,.15);color:#BAE6FD;font-size:10px;padding:4px 11px;border-radius:16px}
+.compare-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.cs{background:rgba(255,255,255,.05);border:0.5px solid rgba(255,255,255,.09);border-radius:9px;padding:10px 12px}
+.cs-label{font-size:9px;color:rgba(255,255,255,.4);margin-bottom:6px;letter-spacing:.06em}
+.cs-row{display:flex;align-items:baseline;gap:8px}
+.cs-prev{font-size:16px;font-weight:500;color:rgba(255,255,255,.35)}
+.cs-arr{font-size:12px;color:rgba(255,255,255,.2)}
+.cs-curr{font-size:26px;font-weight:700;color:#fff}
+.cs.up .cs-curr{color:#34D399}
+.cs.dn .cs-curr{color:#F87171}
+.cs.eq .cs-curr{color:#FBBF24}
+.cs-delta{font-size:9px;font-weight:600;margin-top:3px}
+.cs.up .cs-delta{color:#34D399}.cs.dn .cs-delta{color:#F87171}.cs.eq .cs-delta{color:#FBBF24}
+.okr-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:8px;padding-bottom:5px;border-bottom:0.5px solid rgba(255,255,255,.08)}
+.krs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:7px}
+.krs-grid2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.kr{background:rgba(255,255,255,.05);border:0.5px solid rgba(255,255,255,.08);border-radius:8px;padding:10px 12px;display:flex;align-items:flex-start;gap:8px}
+.sem{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:1px}
+.sem.g{background:rgba(52,211,153,.2);color:#34D399;border:1px solid rgba(52,211,153,.35)}
+.sem.y{background:rgba(251,191,36,.16);color:#FBBF24;border:1px solid rgba(251,191,36,.3)}
+.sem.r{background:rgba(248,113,113,.14);color:#F87171;border:1px solid rgba(248,113,113,.28)}
+.kr-name{font-size:10.5px;font-weight:600;color:#E0E7FF;line-height:1.3;margin-bottom:3px}
+.kr-sub{font-size:9.5px;color:rgba(255,255,255,.38);line-height:1.3}
+.kr-val{font-size:10px;font-weight:700;margin-top:4px}
+.vg{color:#34D399}.vy{color:#FBBF24}.vr{color:#F87171}
+.prog-wrap{background:rgba(255,255,255,.08);border-radius:3px;height:3px;margin-top:5px;overflow:hidden}
+.prog{height:3px;border-radius:3px}
+.pg{background:#34D399}.py{background:#FBBF24}.pr{background:#F87171}
+.legend{display:flex;gap:16px;margin-top:10px}
+.li{display:flex;align-items:center;gap:5px;font-size:9.5px;color:rgba(255,255,255,.35)}
+.ld{width:7px;height:7px;border-radius:50%}
+</style>
+<div class="slide">
+  <div class="orb1"></div><div class="orb2"></div><div class="accent-bar"></div>
+
+  <div class="top z">
+    <div>
+      <div class="eyebrow">Quality Assurance · Objetivos Q2 2026</div>
+      <div class="title">Dónde estamos <em>parados</em></div>
+    </div>
+    <div class="chip">Comparativa Sprint 3 → Sprint 4</div>
+  </div>
+
+  <div class="compare-strip z">
+    <div class="cs up">
+      <div class="cs-label">Bugs cerrados</div>
+      <div class="cs-row">
+        <span class="cs-prev">8</span><span class="cs-arr">→</span><span class="cs-curr">11</span>
+      </div>
+      <div class="cs-delta">↑ +3 más que el sprint anterior</div>
+    </div>
+    <div class="cs up">
+      <div class="cs-label">Completitud del sprint</div>
+      <div class="cs-row">
+        <span class="cs-prev">66%</span><span class="cs-arr">→</span><span class="cs-curr">69%</span>
+      </div>
+      <div class="cs-delta">↑ Mejora progresiva (sprint en curso)</div>
+    </div>
+    <div class="cs up">
+      <div class="cs-label">Capacity utilizada</div>
+      <div class="cs-row">
+        <span class="cs-prev">58%</span><span class="cs-arr">→</span><span class="cs-curr">62%</span>
+      </div>
+      <div class="cs-delta">↑ En rango objetivo 60–70%</div>
+    </div>
+    <div class="cs dn">
+      <div class="cs-label">Tickets bloqueados</div>
+      <div class="cs-row">
+        <span class="cs-prev">0</span><span class="cs-arr">→</span><span class="cs-curr">1</span>
+      </div>
+      <div class="cs-delta">↓ Nuevo bloqueo por proveedor externo</div>
+    </div>
+  </div>
+
+  <div class="z">
+    <div class="okr-label">Objetivos del trimestre — estado actual</div>
+    <div class="krs-grid">
+      <div class="kr">
+        <div class="sem g">✓</div>
+        <div>
+          <div class="kr-name">Capacity en iniciativas clave</div>
+          <div class="kr-sub">Meta: 60–70% del equipo en proyectos priorizados</div>
+          <div class="kr-val vg">62% — en rango exacto</div>
+          <div class="prog-wrap"><div class="prog pg" style="width:62%"></div></div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div>
+          <div class="kr-name">Friends & Family — One Vision Web</div>
+          <div class="kr-sub">Meta: 100% de flujos críticos validados antes del lanzamiento</div>
+          <div class="kr-val vy">En validación activa</div>
+          <div class="prog-wrap"><div class="prog py" style="width:45%"></div></div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem y">~</div>
+        <div>
+          <div class="kr-name">Iniciativas de alto impacto en producción</div>
+          <div class="kr-sub">Meta: 2+ por plataforma este trimestre</div>
+          <div class="kr-val vy">GTL home lista · FARMA carrito pendiente</div>
+          <div class="prog-wrap"><div class="prog py" style="width:50%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="krs-grid krs-grid2" style="margin-top:7px">
+      <div class="kr">
+        <div class="sem g">✓</div>
+        <div>
+          <div class="kr-name">Participación temprana de QA en análisis</div>
+          <div class="kr-sub">Meta: QA presente desde el inicio en el 60% de las iniciativas</div>
+          <div class="kr-val vg">Incorporado en flujo estándar del equipo</div>
+          <div class="prog-wrap"><div class="prog pg" style="width:60%"></div></div>
+        </div>
+      </div>
+      <div class="kr">
+        <div class="sem r">!</div>
+        <div>
+          <div class="kr-name">Predictibilidad de entrega del sprint</div>
+          <div class="kr-sub">Meta: 75% de lo planificado completado por sprint</div>
+          <div class="kr-val vr">Riesgo: 1 bloqueado + 1 en corrección por proveedor</div>
+          <div class="prog-wrap"><div class="prog pr" style="width:40%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend z">
+    <div class="li"><div class="ld" style="background:#34D399"></div>En rango / cumplido</div>
+    <div class="li"><div class="ld" style="background:#FBBF24"></div>En progreso / atención</div>
+    <div class="li"><div class="ld" style="background:#F87171"></div>Riesgo activo — requiere acción</div>
+    <div class="li" style="margin-left:auto"><div class="ld" style="background:rgba(255,255,255,.2)"></div>Sprint 4 en curso — cierra 1 may</div>
+  </div>
+</div>
