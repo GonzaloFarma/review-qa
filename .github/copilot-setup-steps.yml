@@ -1,0 +1,20 @@
+# Copilot Cloud Agent Setup Configuration
+# This file configures MCP servers and development environment initialization
+
+servers:
+  playwright:
+    command: npx
+    args:
+      - "@playwright/test"
+      - serve
+    description: "Playwright MCP server for browser testing and validation"
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /tmp/playwright
+
+preinstall:
+  - npm install
+  - echo "Dependencies installed. Run 'python -m http.server 4173' to serve slides locally before using Playwright."
+
+# Note: Direct file:// protocol access is blocked by Playwright CLI.
+# Always start the HTTP server first: python -m http.server 4173
+# Then access slides via http://localhost:4173/slider-01.html

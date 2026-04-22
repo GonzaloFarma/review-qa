@@ -3,3 +3,10 @@ node_modules/
 playwright-report/
 test-results/
 *.log
+
+# docs/ subdirectories - ignore all except contexto and jira-cvs
+docs/capturas/
+docs/ejemplos-html/
+docs/notas.txt
+docs/para-futuro/
+docs/test-sliders/
