@@ -1,132 +1,245 @@
 # Contexto: Presentación QA — Review Ejecutiva Farmacity Group
 
-## Quién y qué
+## Propósito
 
-**Gonzalo Estevez** — Analista QA Senior en Farmacity, trabajo remoto 4 años.  
-**Equipo QA:** Gonzalo, Stefany, Fernanda, Carla, Felipe, Alixandry (6 analistas qas).  
-**Proveedores externos:** Infracommerce (backend/dev), VTEX (plataforma e-commerce).  
-**Plataformas cubiertas:** Farmacity (FTY) · GetTheLook (GTL) · The Food Market (TFM) · Simplicity (SIM) · Cross ( todos los formatos)
+Este repositorio existe para mantener una secuencia ejecutiva de slides que ayude a Gonzalo Estevez a presentar el valor del equipo QA ante owners, sponsors y stakeholders, sin caer en listados de tickets ni dashboards técnicos.
 
----
+La intención no es explorar diseños nuevos en cada iteración. La intención actual es conservar una estructura estable y actualizar datos, métricas, copy breve y casos destacados con el menor costo posible.
 
-## El problema que se intenta resolver
+## Arquitectura vigente
 
-Gonzalo trabaja en remoto y necesita **visibilizar mejor el valor del equipo QA** ante owners y sponsors de la compañía. La Review trimestral (Q1 se muestran 3 sprints) es el espacio donde el equipo tiene **5-10 minutos y 2 slides** para presentar.
+La review vigente se compone de `3` slides horizontales:
 
-El Canva actual del equipo posee un formato que debemos seguir y aliniearnos sin sobrecargar y sin usar lenguaje técnico para que los stakeholders puedan procesar con fasilidad. El objetivo es **2 slides ejecutivos, limpios, en lenguaje de negocio**, que acompañen un storytelling oral de 5-10 minutos.
+- `slider-01.html`
+- `slider-02.html`
+- `slider-03.html`
 
-**Próxima review: viernes 24 de abril de 2026.**
+`slider-q1.html` ya no es el artefacto principal. Queda como referencia histórica y base del split que originó `slider-01` y `slider-02`.
 
----
+Canvas vigente por slide:
 
-## Estructura de reunión (según documentación interna)
+- `1440x840`
 
-| Campo             | Detalle                                                                           |
-| ----------------- | --------------------------------------------------------------------------------- |
-| Propósito         | Mostrar trabajo de los 3 sprints (Q1) y aprendizajes/logros al equipo stakeholder |
-| Inputs            | Tareas realizadas en Jira (tablero TQD)                                           |
-| Outputs esperados | Feedback de invitados + co-creación de planes de acción para bloqueos             |
-| Beneficio         | Visibilizar trabajo y mantener comunicación abierta con stakeholders              |
+## Rol de cada slide
 
-## Criterios de contenido
+### Slide 01
 
-- Hablar en tono de negocio, no en tono técnico
-- Priorizar claridad visual y lectura rápida
-- Evitar sobrecargar la slide
-- Mostrar el valor del trabajo de QA, no solo el volumen de bugs
-- Mantener la maqueta lista para refinamientos futuros sin perder simplicidad
+Archivo:
 
----
+`slider-01.html`
 
-## Sprints
+Objetivo:
 
-**Sprint 1 — 6 de enero al 28 de enero de 2026**  
-x actividades totales en el tablero (bugs + mejoras + spikes).
+Mostrar cómo QA acompañó el ritmo de delivery, las mejoras y los frentes de innovación del trimestre.
 
-### Métricas reales extraídas de Jira (datos parciales)
+Bloques estables:
 
-| Métrica                              | Valor |
-| ------------------------------------ | ----- |
-| Total bugs detectados                |       |
-| Bugs cerrados (Finalizada)           |       |
-| En rework (devuelto a Infracommerce) |       |
-| Bloqueados                           |       |
-| Horas QA invertidas en bugs          |       |
-| Capacity disponible                  |       |
-| Capacity asignada                    |       |
-| Ocupación de capacity                |       |
+- KPI strip superior
+- panel de mix por sprint
+- panel de cobertura por formato
+- `3` cards de cierre
 
-### Distribución de bugs por plataforma
+### Slide 02
 
-| Plataforma      | Bugs |
-| --------------- | ---- |
-| Farmacity       |      |
-| Simpli          |      |
-| GetTheLook      |      |
-| The Food Market |      |
+Archivo:
 
-### Bugs críticos destacados (Sprint 4)
+`slider-02.html`
 
-| Prioridad | Plataforma | Descripción | Estado |
+Objetivo:
 
----
+Mostrar cómo QA interceptó riesgo, gestionó bugs y sostuvo control operativo durante el trimestre.
 
-## Comparativa sprint a sprint
+Bloques estables:
 
-| Sprint | Bugs detectados | Bugs cerrados | % Cierre | Rework | Bloqueados |
-| ------ | --------------- | ------------- | -------- | ------ | ---------- |
+- KPI strip superior
+- panel de bugs por sprint
+- panel doble de formato y prioridad
+- `4` cards de bugs destacados
 
----
+### Slide 03
 
-## Estructura de las 2 slides
+Archivo:
 
-### Slide 1 — "Lo que QA protegió este sprint"
+`slider-03.html`
 
-- Métricas hero: bugs detectados, cerrados, rework, bloqueados, horas invertidas
-- 4 tarjetas de bugs críticos con impacto en lenguaje de negocio (sin IDs de Jira)
-- Comparativa delta vs sprint anterior (↑↓=)
-- Sin nomenclaturas técnicas — solo nombres de iniciativas
+Objetivo:
 
-### Slide 2 — "Dónde estamos parados"
+Mostrar el comportamiento de la ticketera TeAyudo, separando el peso de Post Venta del resto de la plataforma y destacando las incidencias más repetidas por mes.
 
-- Comparativa visual Sprint 1→3 con barras horizontales (bugs detectados y bugs cerrados)
-- Sin nomenclaturas técnicas — solo nombres de iniciativas
-- Comparativa delta vs sprint anterior (↑↓=)
+Bloques estables:
 
----
+- resumen principal de ticketera
+- strip de estado operativo
+- `section.months-grid` con `3` cards mensuales
+- panel final de prácticas de carga
 
-## Fuentes de datos utilizadas
+## Sistema visual vigente
 
-| Archivo                   | Contenido                                                        |
-| ------------------------- | ---------------------------------------------------------------- |
-| `Jira (Q1).csv`           | Export de los sprints — campos error y mejora                    |
-| `Capacity (sprint 3).csv` | capacity de horas del equipo QA (solo tenemos registro de Marzo) |
+Este proyecto ya tiene una línea visual definida. No debería rediseñarse salvo pedido explícito.
 
----
+Principios visuales actuales:
 
-## Baseline visual aprobado para trabajar (Estilo y formato de las slides)
+- fondo blanco limpio
+- lenguaje ejecutivo
+- contenedores blancos con borde sutil y radio amplio
+- tipografía `Montserrat`
+- color principal `#211274`
+- uso de colores de apoyo solo para jerarquía puntual
+- lectura rápida y poco texto visible
 
-- **Canvas:** `1440 x 890`
-- **color de fuente de letras:** `#120052`
-- **color de fuente de letras:** `#0F0A2E`
-- **color de fondo de card:** `#f4f6fc`
-- **color de fondo de card:** `#ffffff`
-- **Paleta:** verde `#34D399` (ok) · amarillo `#FBBF24` (atención) · rojo `#F87171` (riesgo) · cyan `#7DD3FC` · violeta `#C4B5FD`
-- **Acento lateral:** barra de 5px (color varía por slide: violeta / cyan / verde)
-- **Estilo:** limpio, ejecutivo, liviano y fácil de exportar como imagen
-- **Uso esperado:** mock HTML aprobado -> export a imagen -> incorporación al Canva general del equipo
+Paleta base:
 
----
+- `#211274`
+- `#5ba698`
+- `#d7d8d8`
+- `#ff3131`
+- `#00dd88`
+- `#49a5ef`
+- `#ffd359`
+- `#ffffff`
 
-## Pendientes para completar los slides
+## Regla principal de mantenimiento
 
-- [ ]
+La estructura y el diseño base deben considerarse estables.
 
----
+Primero se actualizan:
 
-## Referencias válidas
+- números
+- porcentajes
+- labels
+- notas breves
+- casos destacados
 
-- `docs/capturas/`: QA visual para correciones
-- `docs/ejemplos-html/`: artefactos HTML reutilizables para cards, bloques o layouts
+Solo después, y si realmente hace falta, se toca layout.
 
----
+La expectativa para futuras iteraciones es:
+
+`cambiar datos antes que rediseñar bloques`
+
+## Fuentes de datos actuales
+
+Fuentes principales:
+
+- `docs/jira-cvs/Jira (Q1).csv`
+- `docs/jira-cvs/Jira-mejoras (Q1).csv`
+- `docs/jira-cvs/Jira-error (Q1).csv`
+- `docs/contexto/q1_metrics_baseline.md`
+- `docs/story/q1-data-team.md`
+- `docs/contexto/teayudo_ticketera_q1.json`
+
+Fuente visual transitoria para `slider-03`:
+
+- `docs/capturas/slider-03.png`
+
+Orden de prioridad si aparecen contradicciones:
+
+1. `docs/jira-cvs/*.csv`
+2. `docs/story/*`
+3. `docs/contexto/*`
+4. capturas
+
+## Caveats metodológicos
+
+- El export principal trae `10` columnas `Sprint` duplicadas. Q1 se define leyendo todas.
+- `Campo personalizado (Criticidad)` está vacío. `Prioridad` se usa como proxy de criticidad.
+- `Tiempo Trabajado` está incompleto. Las horas visibles deben presentarse como `horas registradas en Jira`.
+- La pertenencia al trimestre se define por presencia del ticket en sprints Q1, aunque el cierre ocurra después.
+- `Capacity (Q1).csv` sigue siendo exploratorio.
+- `slider-03` usa datos normalizados manualmente desde captura. Eso sirve para mantenimiento simple, pero sigue siendo deuda técnica si el slide pasa a actualizarse con frecuencia.
+
+## Métricas vigentes por slide
+
+### Slide 01
+
+- Tareas / User Stories: `177`
+- Prioridad alta:
+  - `Highest`: `12`
+  - `High`: `28`
+- Horas registradas QA: `511.7 h`
+- Mejoras cerradas: `94`
+- Mix por sprint:
+  - Sprint 1: `43` = `24` mejoras / `14` bugs / `5` innovación
+  - Sprint 2: `59` = `23` mejoras / `23` bugs / `13` innovación
+  - Sprint 3: `75` = `47` mejoras / `25` bugs / `3` innovación
+- Cobertura por formato:
+  - GetTheLook: `27`
+  - Cross: `26`
+  - Farmacity: `17`
+  - TheFoodMarket: `15`
+  - Simplicity: `9`
+- Completitud mensual:
+  - Enero: `44%`
+  - Febrero: `52%`
+  - Marzo: `60%`
+
+### Slide 02
+
+- Bugs Q1: `59`
+- Resolución: `100%`
+- Prioridad alta:
+  - `Highest`: `7`
+  - `High`: `10`
+- Pico por sprint: `23`
+- Bugs por sprint:
+  - Sprint 1: `14`
+  - Sprint 2: `23`
+  - Sprint 3: `22`
+- Bugs por formato:
+  - Farmacity: `24`
+  - GetTheLook: `14`
+  - Simplicity: `12`
+  - TheFoodMarket: `9`
+- Prioridad en Jira:
+  - Medium: `17`
+  - High: `10`
+  - Highest: `7`
+  - Low: `1`
+
+### Slide 03
+
+- Tickets totales: `181`
+- Post Venta: `93` (`51,4%`)
+- Resto plataforma: `88` (`48,6%`)
+- Estado operativo:
+  - Tickets: `88`
+  - Abiertos: `29`
+  - En espera: `29`
+  - Cerrados: `30`
+  - Tiempo promedio de resolución: `18d`
+- Top incidencias:
+  - Enero: `27` tickets / `20` incidentes
+  - Febrero: `25` tickets / `17` incidentes
+  - Marzo: `36` tickets / `29` incidentes
+
+## Narrativa actual
+
+Slide 01:
+
+- QA acompañó volumen, prioridad alta e innovación
+
+Slide 02:
+
+- QA interceptó riesgo y sostuvo control de bugs
+
+Slide 03:
+
+- la ticketera deja una lectura operativa separada entre Post Venta y resto plataforma
+
+Las slides deben sentirse como una sola secuencia, no como piezas aisladas.
+
+## Estado documental
+
+`docs/contexto/slide_design_system.md` no existe hoy en el repositorio.
+
+Hasta que exista, el sistema vigente queda documentado en:
+
+- este archivo
+- `docs/contexto/slide_maintenance_system.md`
+- `AGENTS.md`
+
+## Validación esperada
+
+- servir por HTTP local antes de usar Playwright
+- validar `slider-01.html`, `slider-02.html` y `slider-03.html` en `1440x840`
+- revisar jerarquía visual, legibilidad, clipping y consistencia entre slides
+- verificar métricas y casos contra las fuentes antes de cerrar cambios

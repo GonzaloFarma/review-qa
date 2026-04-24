@@ -1,0 +1,95 @@
+{
+  "title": "Gestion de Ticketera Q1",
+  "hero": {
+    "tickets_totales": 181,
+    "post_venta": {
+      "tickets": 93,
+      "share": "51,4%",
+      "note": "Más de la mitad de todos los tickets del trimestre corresponde al mismo problema raíz: pedidos que no sincronizan con el Back Office después del pago."
+    },
+    "resto_plataforma": {
+      "tickets": 88,
+      "share": "48,6%",
+      "note": "Refleja el comportamiento real del resto de la plataforma, con una tasa de resolución significativamente mejor y problemáticas diversas."
+    }
+  },
+  "status_summary": {
+    "tickets": 88,
+    "abiertos": 29,
+    "en_espera": 29,
+    "cerrados": 30,
+    "tiempo_promedio_resolucion": "18d"
+  },
+  "top_3_incidencias_por_mes": [
+    {
+      "mes": "Enero",
+      "tickets": 27,
+      "incidentes": 20,
+      "top_3": [
+        {
+          "rank": 1,
+          "title": "Checkout Paso 3: Métodos de pago",
+          "detail": "7 incidentes — fallas funcionales de pago"
+        },
+        {
+          "rank": 2,
+          "title": "No aplica el cupón",
+          "detail": "4 incidentes"
+        },
+        {
+          "rank": 3,
+          "title": "Carrito",
+          "detail": "3 incidentes"
+        }
+      ]
+    },
+    {
+      "mes": "Febrero",
+      "tickets": 25,
+      "incidentes": 17,
+      "top_3": [
+        {
+          "rank": 1,
+          "title": "Checkout Paso 3: Métodos de pago",
+          "detail": "5 incidentes — fallas funcionales de pago"
+        },
+        {
+          "rank": 2,
+          "title": "Home Page / Inicio",
+          "detail": "2 incidentes"
+        },
+        {
+          "rank": 3,
+          "title": "No aplica el cupón / Checkout Paso 1",
+          "detail": "2 incidentes cada uno"
+        }
+      ]
+    },
+    {
+      "mes": "Marzo",
+      "tickets": 36,
+      "incidentes": 29,
+      "top_3": [
+        {
+          "rank": 1,
+          "title": "Descuento de Empleado",
+          "detail": "6 incidentes — 20,7%"
+        },
+        {
+          "rank": 2,
+          "title": "Home Page / Inicio",
+          "detail": "4 incidentes"
+        },
+        {
+          "rank": 3,
+          "title": "Carrito / Checkout Paso 3 / Login",
+          "detail": "3 incidentes cada uno"
+        }
+      ]
+    }
+  ],
+  "practicas": [
+    "Explicitar correctamente el formato de negocio donde sucede el bug.",
+    "Adjuntar la mayor cantidad de evidencia que respalde el reporte (idealmente video, captura e información relevante)."
+  ]
+}

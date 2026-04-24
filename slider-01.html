@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QA Q1 · Slide 1</title>
+    <title>QA Q1 2026 · Slide 01</title>
     <link rel="icon" href="data:," />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -17,446 +17,723 @@
       }
 
       :root {
-        --bg: #ffffff;
-        --panel: rgba(255, 255, 255, 0.92);
-        --panel-soft: #f5f7fb;
-        --line: rgba(18, 34, 68, 0.1);
-        --ink: #102247;
-        --ink-soft: #46607f;
-        --ink-muted: #71849d;
-        --emerald: #14936b;
-        --emerald-soft: #e8f8f1;
-        --cyan: #0f8ea8;
-        --cyan-soft: #eaf8fb;
-        --amber: #c88a16;
-        --amber-soft: #fff5df;
-        --navy-soft: #eef4fb;
-        --shadow: 0 18px 42px rgba(16, 34, 71, 0.09);
-        --display: "Fraunces", Georgia, serif;
-        --body: "IBM Plex Sans", "Segoe UI", sans-serif;
+        --ink: #211274;
+        --ink-muted: rgba(33, 18, 116, 0.72);
+        --ink-soft: rgba(33, 18, 116, 0.48);
+        --mint: #5ba698;
+        --mint-strong: #00dd88;
+        --blue: #49a5ef;
+        --amber: #ffd359;
+        --danger: #ff3131;
+        --surface: #ffffff;
+        --surface-alt: #f6f6f8;
+        --surface-soft: #eef2f5;
+        --line: rgba(33, 18, 116, 0.16);
+        --line-strong: rgba(33, 18, 116, 0.24);
+        --shadow: 0 20px 48px rgba(33, 18, 116, 0.08);
+        --display: "Montserrat", "Segoe UI", sans-serif;
+        --body: "Montserrat", "Segoe UI", sans-serif;
       }
 
       html,
       body {
         margin: 0;
-        width: 1440px;
-        height: 840px;
-        overflow: hidden;
-        background: var(--bg);
+        min-height: 1780px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 1) 51%,
+          rgba(246, 246, 248, 1) 51%,
+          rgba(246, 246, 248, 1) 100%
+        );
         color: var(--ink);
         font-family: var(--body);
       }
 
       body {
         position: relative;
+        width: 1440px;
       }
 
-      body::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background:
-          radial-gradient(circle at 12% 16%, rgba(20, 147, 107, 0.1), transparent 24%),
-          radial-gradient(circle at 88% 12%, rgba(15, 142, 168, 0.1), transparent 22%),
-          linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
-        pointer-events: none;
+      body::before,
+      body::after {
+        display: none;
       }
 
       .slide {
         position: relative;
         width: 1440px;
-        height: 840px;
-        padding: 34px 42px 30px 46px;
-        overflow: hidden;
-      }
-
-      .slide::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 8px;
-        height: 100%;
-        background: linear-gradient(180deg, #14936b 0%, #0f8ea8 100%);
+        min-height: 1780px;
+        padding: 18px 34px 24px;
       }
 
       .shell {
-        position: relative;
-        z-index: 1;
-        height: 100%;
         display: grid;
-        grid-template-rows: auto auto 1fr auto;
-        gap: 18px;
-      }
-
-      .header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 24px;
-        align-items: end;
-      }
-
-      .eyebrow {
-        margin: 0 0 10px;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--cyan);
-      }
-
-      .title {
-        margin: 0 0 10px;
-        font-family: var(--display);
-        font-size: 48px;
-        line-height: 0.98;
-        letter-spacing: -0.04em;
-      }
-
-      .subtitle {
-        max-width: 940px;
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.45;
-        color: var(--ink-soft);
-      }
-
-      .meta {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-end;
-      }
-
-      .pill {
-        padding: 10px 14px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.84);
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--ink-soft);
-        box-shadow: var(--shadow);
-      }
-
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: 14px;
       }
 
-      .stat {
-        min-height: 122px;
-        padding: 18px 18px 16px;
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        background: var(--panel);
+      .story-block {
+        position: relative;
+        padding: 20px 22px 18px 26px;
+        border: 1px solid var(--line-strong);
+        border-radius: 34px;
+        background: rgba(255, 255, 255, 0.98);
         box-shadow: var(--shadow);
-        animation: rise 560ms ease both;
+        overflow: hidden;
       }
 
-      .stat:nth-child(2) {
-        animation-delay: 80ms;
+      .story-block.top .section-head {
+        margin-bottom: 24px;
       }
 
-      .stat:nth-child(3) {
-        animation-delay: 160ms;
+      .story-block.bottom .section-head {
+        margin-bottom: 24px;
       }
 
-      .stat:nth-child(4) {
-        animation-delay: 240ms;
+      .story-block::before {
+        display: none;
       }
 
-      .stat-label {
-        margin: 0 0 14px;
-        font-size: 11px;
-        font-weight: 700;
+      .section-head {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: start;
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        margin: 0;
+        max-width: 760px;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      .section-context {
+        justify-self: end;
+        padding-top: 8px;
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--ink);
+        text-transform: lowercase;
+      }
+
+      .compare-strip {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+
+      .cs {
+        min-height: 126px;
+        padding: 18px 18px 16px;
+        border: 1px solid var(--line-strong);
+        border-radius: 24px;
+        background: var(--surface);
+        display: grid;
+        gap: 10px;
+      }
+
+      .cs.mint {
+        background: var(--surface);
+      }
+
+      .cs.blue {
+        background: var(--surface);
+      }
+
+      .cs.amber {
+        background: var(--surface);
+      }
+
+      .cs.red {
+        background: var(--surface);
+      }
+
+      .story-block.bottom .cs {
+        min-height: 129.78px;
+      }
+
+      .cs-label {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 800;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: var(--ink-muted);
+        color: var(--ink-soft);
       }
 
-      .stat-value {
-        margin: 0 0 8px;
-        font-family: var(--display);
+      .cs-value {
+        margin: 0;
         font-size: 42px;
+        font-weight: 800;
         line-height: 0.95;
         letter-spacing: -0.05em;
       }
 
-      .stat-copy {
-        margin: 0;
-        font-size: 14px;
+      .cs-note {
+        margin: -2px 0 0;
+        font-size: 12px;
         line-height: 1.35;
-        color: var(--ink-soft);
-      }
-
-      .emerald {
-        background: linear-gradient(180deg, #ffffff 0%, #f2fbf7 100%);
-      }
-
-      .emerald .stat-value {
-        color: var(--emerald);
-      }
-
-      .cyan-card {
-        background: linear-gradient(180deg, #ffffff 0%, #f2fbff 100%);
-      }
-
-      .cyan-card .stat-value {
-        color: var(--cyan);
-      }
-
-      .amber {
-        background: linear-gradient(180deg, #ffffff 0%, #fff9ee 100%);
-      }
-
-      .amber .stat-value {
-        color: var(--amber);
-      }
-
-      .main {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 16px;
-        min-height: 0;
-      }
-
-      .panel {
-        min-height: 0;
-        padding: 18px 20px;
-        border: 1px solid var(--line);
-        border-radius: 28px;
-        background: var(--panel);
-        box-shadow: var(--shadow);
-      }
-
-      .panel-title {
-        margin: 0 0 14px;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
         color: var(--ink-muted);
       }
 
-      .sprint-grid {
+      .cs-value.priority-split {
         display: grid;
-        gap: 14px;
+        gap: 4px;
       }
 
-      .sprint-card {
-        display: grid;
-        grid-template-columns: 120px 1fr auto;
-        gap: 14px;
-        align-items: center;
-        padding: 14px 14px 14px 0;
-        border-top: 1px solid var(--line);
+      .priority-secondary,
+      .priority-primary {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 6px;
+        white-space: nowrap;
       }
 
-      .sprint-card:first-of-type {
-        border-top: none;
-        padding-top: 4px;
-      }
-
-      .sprint-name {
-        padding-left: 14px;
-      }
-
-      .sprint-label {
-        margin: 0 0 4px;
-        font-size: 11px;
+      .priority-secondary {
+        font-size: 16px;
         font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
+        letter-spacing: -0.02em;
         color: var(--ink-muted);
       }
 
-      .sprint-total {
-        margin: 0;
-        font-family: var(--display);
-        font-size: 30px;
-        line-height: 1;
-      }
-
-      .mix {
-        display: grid;
-        gap: 8px;
-      }
-
-      .bar-line {
-        display: grid;
-        grid-template-columns: 72px 1fr 52px;
-        gap: 10px;
-        align-items: center;
-      }
-
-      .bar-tag {
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--ink-soft);
-      }
-
-      .bar-track {
-        position: relative;
-        height: 14px;
-        overflow: hidden;
-        border-radius: 999px;
-        background: #edf3f7;
-      }
-
-      .bar-fill {
-        height: 100%;
-        border-radius: 999px;
-        transform-origin: left;
-        animation: grow 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
-      }
-
-      .bar-fill.improvements {
-        background: linear-gradient(90deg, #14936b 0%, #3bb58d 100%);
-      }
-
-      .bar-fill.bugs {
-        background: linear-gradient(90deg, #0f8ea8 0%, #6cb6c5 100%);
-      }
-
-      .bar-value {
-        font-size: 12px;
-        font-weight: 700;
+      .priority-secondary strong {
+        font-size: 22px;
+        font-weight: 800;
         color: var(--ink);
       }
 
-      .closeout {
-        text-align: right;
-        min-width: 120px;
+      .priority-primary {
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
       }
 
-      .closeout-label {
-        margin: 0 0 4px;
-        font-size: 11px;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--ink-muted);
-        font-weight: 700;
+      .priority-primary strong {
+        font-size: 42px;
+        font-weight: 800;
       }
 
-      .closeout-value {
+      .cs.mint .cs-value,
+      .cs.blue .cs-value,
+      .cs.amber .cs-value,
+      .cs.red .cs-value {
+        color: var(--ink);
+      }
+
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1.14fr 0.86fr;
+        gap: 14px;
+        margin-bottom: 14px;
+      }
+
+      .main-grid.bottom-grid {
+        grid-template-columns: 0.82fr 1.18fr;
+      }
+
+      .panel {
+        min-height: 100%;
+        padding: 18px 18px 16px;
+        border: 1px solid var(--line-strong);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.94);
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .panel.coverage-panel {
+        gap: 18px;
+      }
+
+      .panel-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+      }
+
+      .panel-title {
         margin: 0;
-        font-size: 26px;
-        font-family: var(--display);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
       }
 
-      .coverage-grid {
+      .panel-note {
+        margin: 0;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--ink-muted);
+      }
+
+      .legend {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--ink-muted);
+      }
+
+      .legend span::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+      }
+
+      .legend .legend-improvements::before {
+        background: var(--ink);
+      }
+
+      .legend .legend-bugs::before {
+        background: var(--ink);
+      }
+
+      .legend .legend-closed::before {
+        background: var(--ink);
+      }
+
+      .legend .legend-highest::before {
+        background: var(--ink);
+      }
+
+      .legend .legend-high::before {
+        background: var(--ink);
+      }
+
+      .legend .legend-medium::before {
+        background: var(--ink);
+      }
+
+      .legend .legend-low::before {
+        background: var(--ink);
+      }
+
+      .mix-list,
+      .coverage-list,
+      .priority-list,
+      .format-risk-list {
         display: grid;
         gap: 12px;
       }
 
-      .coverage-item {
+      .mix-row {
         display: grid;
-        grid-template-columns: 112px 1fr 34px;
+        grid-template-columns: 114px 1fr;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .mix-meta {
+        display: grid;
+        gap: 1px;
+      }
+
+      .mix-name {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .mix-total {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+      }
+
+      .mix-divider {
+        height: 1px;
+        background: rgba(33, 18, 116, 0.85);
+      }
+
+      .mix-track {
+        height: 18px;
+        padding: 3px;
+        border-radius: 999px;
+        background: var(--surface-soft);
+        overflow: hidden;
+      }
+
+      .mix-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+
+      .mix-fill.improvements {
+        background: #00dd88;
+      }
+
+      .mix-fill.bugs {
+        background: #5ba698;
+      }
+
+      .mix-fill.innovation {
+        background: #69c28f;
+      }
+
+      .mix-stack {
+        display: grid;
+        gap: 10px;
+      }
+
+      .mix-line {
+        display: grid;
+        grid-template-columns: 74px 1fr 32px;
         gap: 10px;
         align-items: center;
       }
 
-      .coverage-label {
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--ink-soft);
+      .mix-line-label {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--ink-muted);
       }
 
-      .coverage-track {
-        height: 12px;
+      .mix-line-value {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--ink);
+        text-align: right;
+      }
+
+      .mix-details {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--ink-muted);
+      }
+
+      .coverage-row {
+        display: grid;
+        grid-template-columns: 124px 1fr 38px;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .coverage-label,
+      .priority-label,
+      .format-risk-label {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .coverage-track,
+      .priority-track,
+      .format-risk-track {
+        height: 18px;
+        padding: 3px;
         border-radius: 999px;
-        background: #edf3f7;
+        background: var(--surface-soft);
         overflow: hidden;
       }
 
       .coverage-fill {
         height: 100%;
         border-radius: 999px;
-        background: linear-gradient(90deg, #102247 0%, #0f8ea8 100%);
-        animation: grow 820ms cubic-bezier(0.22, 1, 0.36, 1) both;
+        background: var(--ink);
       }
 
-      .coverage-value {
-        text-align: right;
-        font-size: 12px;
-        font-weight: 700;
+      .coverage-value,
+      .priority-value,
+      .format-risk-value {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--ink);
       }
 
-      .takeaway {
-        margin-top: 18px;
-        padding: 16px;
-        border-radius: 22px;
-        background: linear-gradient(180deg, #eff9f6 0%, #f8fcfe 100%);
+      .coverage-panel .coverage-list {
+        width: min(100%, 510px);
+        margin: auto;
+        align-content: center;
+        gap: 16px;
       }
 
-      .takeaway-title {
-        margin: 0 0 8px;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.14em;
+      .cards-grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .cards-grid.three {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .cards-grid.four {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .card {
+        min-height: 154px;
+        padding: 16px 16px 14px;
+        border: 1px solid var(--line-strong);
+        border-radius: 24px;
+        background: var(--surface);
+        display: grid;
+        align-content: start;
+        gap: 8px;
+      }
+
+      .card.completion-card {
+        grid-template-rows: auto auto 1fr;
+        gap: 12px;
+      }
+
+      .card-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .card-chip,
+      .priority-chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--emerald);
       }
 
-      .takeaway-text {
+      .brand-farmacity {
+        background: rgba(33, 18, 116, 0.06);
+        color: var(--ink);
+      }
+
+      .brand-getthelook {
+        background: rgba(33, 18, 116, 0.06);
+        color: var(--ink);
+      }
+
+      .brand-thefoodmarket {
+        background: rgba(33, 18, 116, 0.06);
+        color: var(--ink);
+      }
+
+      .brand-simplicity {
+        background: rgba(33, 18, 116, 0.06);
+        color: var(--ink);
+      }
+
+      .priority-chip.highest {
+        background: rgba(33, 18, 116, 0.06);
+        color: var(--ink);
+      }
+
+      .priority-chip.high {
+        background: rgba(33, 18, 116, 0.06);
+        color: var(--ink);
+      }
+
+      .card-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+      }
+
+      .card-copy {
         margin: 0;
         font-size: 14px;
         line-height: 1.45;
-        color: var(--ink-soft);
-      }
-
-      .notes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-      }
-
-      .note {
-        padding: 15px 16px;
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        background: var(--panel-soft);
-      }
-
-      .note-title {
-        margin: 0 0 6px;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
         color: var(--ink-muted);
       }
 
-      .note-text {
+      .card-state {
+        margin: auto 0 0;
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .completion-stack {
+        display: grid;
+        align-content: end;
+        gap: 12px;
+        min-height: 100%;
+      }
+
+      .completion-line {
+        display: grid;
+        grid-template-columns: 64px 1fr 40px;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .completion-label {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .completion-track {
+        height: 12px;
+        padding: 2px;
+        border-radius: 999px;
+        background: rgba(33, 18, 116, 0.08);
+        overflow: hidden;
+      }
+
+      .completion-fill {
+        height: 100%;
+        border-radius: 999px;
+        background: var(--ink);
+      }
+
+      .completion-value {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--ink);
+        text-align: right;
+      }
+
+      .line-chart-wrap {
+        padding: 4px 0 0;
+      }
+
+      .line-chart {
+        width: 100%;
+        height: 250px;
+      }
+
+      .line-chart text {
+        font-family: var(--body);
+      }
+
+      .line-summary {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 8px;
+      }
+
+      .line-summary p {
         margin: 0;
-        font-size: 13px;
-        line-height: 1.4;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--ink-muted);
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        flex: 1;
+      }
+
+      .mini-panel {
+        padding: 14px 14px 12px;
+        border: 1px solid var(--line-strong);
+        border-radius: 22px;
+        background: var(--surface-alt);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .mini-panel .priority-list,
+      .mini-panel .format-risk-list {
+        width: 100%;
+        max-width: 100%;
+        margin: auto 0;
+        align-content: center;
+        gap: 16px;
+      }
+
+      .mini-title {
+        margin: 0;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
         color: var(--ink-soft);
       }
 
-      @keyframes rise {
-        from {
-          opacity: 0;
-          transform: translateY(18px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      .priority-row {
+        display: grid;
+        grid-template-columns: 108px 1fr 30px;
+        gap: 12px;
+        align-items: center;
       }
 
-      @keyframes grow {
-        from {
-          transform: scaleX(0);
-        }
+      .priority-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
 
-        to {
-          transform: scaleX(1);
+      .priority-fill.highest {
+        background: var(--ink);
+      }
+
+      .priority-fill.high {
+        background: var(--ink);
+      }
+
+      .priority-fill.medium {
+        background: var(--ink);
+      }
+
+      .priority-fill.low {
+        background: var(--ink);
+      }
+
+      .format-risk-row {
+        display: grid;
+        grid-template-columns: 108px 1fr 30px;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .format-risk-stack {
+        display: flex;
+        height: 100%;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .format-risk-fill {
+        height: 100%;
+      }
+
+      .format-risk-fill.sprint-1 {
+        background: rgba(33, 18, 116, 0.32);
+      }
+
+      .format-risk-fill.sprint-2 {
+        background: rgba(33, 18, 116, 0.72);
+      }
+
+      .format-risk-fill.sprint-3 {
+        background: var(--ink);
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
         }
       }
 
@@ -473,205 +750,285 @@
   <body>
     <main class="slide">
       <div class="shell">
-        <header class="header">
-          <div>
-            <p class="eyebrow">Review ejecutiva QA · Q1 2026</p>
-            <h1 class="title">Cómo QA sostuvo la salida de cambios del trimestre</h1>
-            <p class="subtitle">
-              El volumen creció en marzo, pero el trimestre siguió dominado por acompañamiento a
-              implementación, cobertura sobre múltiples marcas y seguimiento sostenido entre
-              sprints.
-            </p>
-          </div>
-          <div class="meta">
-            <div class="pill">Farmacity Group · e-commerce</div>
-            <div class="pill">Base: Jira Q1 · 3 sprints</div>
-          </div>
-        </header>
-
-        <section class="stats" aria-label="Resumen del trimestre">
-          <article class="stat emerald">
-            <p class="stat-label">Carga Acompañada</p>
-            <p class="stat-value">132</p>
-            <p class="stat-copy">Incidencias trabajadas en Q1 entre mejoras y bugs.</p>
-          </article>
-          <article class="stat cyan-card">
-            <p class="stat-label">Trabajo de Implementación</p>
-            <p class="stat-value">73.5%</p>
-            <p class="stat-copy">El trimestre estuvo dominado por mejoras, no por reacción a fallas.</p>
-          </article>
-          <article class="stat">
-            <p class="stat-label">Cierres En Q1</p>
-            <p class="stat-value">70</p>
-            <p class="stat-copy">Incidencias resueltas dentro del mismo período de review.</p>
-          </article>
-          <article class="stat amber">
-            <p class="stat-label">Seguimiento Entre Sprints</p>
-            <p class="stat-value">35</p>
-            <p class="stat-copy">Casos que requirieron gobernanza y continuidad entre cortes.</p>
-          </article>
-        </section>
-
-        <section class="main">
-          <article class="panel">
-            <h2 class="panel-title">Evolución de carga y cierre por sprint</h2>
-            <div class="sprint-grid">
-              <div class="sprint-card">
-                <div class="sprint-name">
-                  <p class="sprint-label">Sprint 1</p>
-                  <p class="sprint-total">52</p>
-                </div>
-                <div class="mix">
-                  <div class="bar-line">
-                    <span class="bar-tag">Mejoras</span>
-                    <div class="bar-track">
-                      <div class="bar-fill improvements" style="width: 70.9%"></div>
-                    </div>
-                    <span class="bar-value">39</span>
-                  </div>
-                  <div class="bar-line">
-                    <span class="bar-tag">Bugs</span>
-                    <div class="bar-track">
-                      <div class="bar-fill bugs" style="width: 23.6%"></div>
-                    </div>
-                    <span class="bar-value">13</span>
-                  </div>
-                </div>
-                <div class="closeout">
-                  <p class="closeout-label">Cierres</p>
-                  <p class="closeout-value">22</p>
-                </div>
-              </div>
-
-              <div class="sprint-card">
-                <div class="sprint-name">
-                  <p class="sprint-label">Sprint 2</p>
-                  <p class="sprint-total">52</p>
-                </div>
-                <div class="mix">
-                  <div class="bar-line">
-                    <span class="bar-tag">Mejoras</span>
-                    <div class="bar-track">
-                      <div class="bar-fill improvements" style="width: 70.9%"></div>
-                    </div>
-                    <span class="bar-value">39</span>
-                  </div>
-                  <div class="bar-line">
-                    <span class="bar-tag">Bugs</span>
-                    <div class="bar-track">
-                      <div class="bar-fill bugs" style="width: 23.6%"></div>
-                    </div>
-                    <span class="bar-value">13</span>
-                  </div>
-                </div>
-                <div class="closeout">
-                  <p class="closeout-label">Cierres</p>
-                  <p class="closeout-value">20</p>
-                </div>
-              </div>
-
-              <div class="sprint-card">
-                <div class="sprint-name">
-                  <p class="sprint-label">Sprint 3</p>
-                  <p class="sprint-total">70</p>
-                </div>
-                <div class="mix">
-                  <div class="bar-line">
-                    <span class="bar-tag">Mejoras</span>
-                    <div class="bar-track">
-                      <div class="bar-fill improvements" style="width: 100%"></div>
-                    </div>
-                    <span class="bar-value">55</span>
-                  </div>
-                  <div class="bar-line">
-                    <span class="bar-tag">Bugs</span>
-                    <div class="bar-track">
-                      <div class="bar-fill bugs" style="width: 27.3%"></div>
-                    </div>
-                    <span class="bar-value">15</span>
-                  </div>
-                </div>
-                <div class="closeout">
-                  <p class="closeout-label">Cierres</p>
-                  <p class="closeout-value">28</p>
-                </div>
-              </div>
+        <section class="story-block top" aria-labelledby="delivery-title">
+          <div class="section-head">
+            <div>
+              <h2 class="section-title" id="delivery-title">
+                Acompañamiento QA en mejoras trabajadas en Q1
+              </h2>
             </div>
-          </article>
+          </div>
 
-          <article class="panel">
-            <h2 class="panel-title">Cobertura por formato en el trimestre</h2>
-            <div class="coverage-grid">
-              <div class="coverage-item">
-                <span class="coverage-label">Farmacity</span>
-                <div class="coverage-track">
-                  <div class="coverage-fill" style="width: 100%"></div>
-                </div>
-                <span class="coverage-value">39</span>
-              </div>
-              <div class="coverage-item">
-                <span class="coverage-label">TFM</span>
-                <div class="coverage-track">
-                  <div class="coverage-fill" style="width: 66.7%"></div>
-                </div>
-                <span class="coverage-value">26</span>
-              </div>
-              <div class="coverage-item">
-                <span class="coverage-label">GTL</span>
-                <div class="coverage-track">
-                  <div class="coverage-fill" style="width: 64.1%"></div>
-                </div>
-                <span class="coverage-value">25</span>
-              </div>
-              <div class="coverage-item">
-                <span class="coverage-label">Cross</span>
-                <div class="coverage-track">
-                  <div class="coverage-fill" style="width: 61.5%"></div>
-                </div>
-                <span class="coverage-value">24</span>
-              </div>
-              <div class="coverage-item">
-                <span class="coverage-label">Simplicity</span>
-                <div class="coverage-track">
-                  <div class="coverage-fill" style="width: 46.1%"></div>
-                </div>
-                <span class="coverage-value">18</span>
-              </div>
-            </div>
-
-            <div class="takeaway">
-              <p class="takeaway-title">Lectura ejecutiva</p>
-              <p class="takeaway-text">
-                Marzo concentró el mayor volumen del trimestre sin romper el balance del mix.
-                QA siguió operando como función de acompañamiento y control, no solo como receptor
-                de incidentes.
+          <section
+            class="compare-strip"
+            aria-label="KPIs ejecutivos de mejoras"
+          >
+            <article class="cs mint">
+              <p class="cs-label">Tareas / User Stories</p>
+              <p class="cs-value">177</p>
+            </article>
+            <article class="cs blue">
+              <p class="cs-label">Prioridad alta</p>
+              <p class="cs-value priority-split">
+                <span class="priority-primary"
+                  >Highest: <strong>12</strong></span
+                >
+                <span class="priority-secondary"
+                  >High: <strong>28</strong></span
+                >
               </p>
-            </div>
-          </article>
-        </section>
+            </article>
+            <article class="cs amber">
+              <p class="cs-label">Horas registradas QA</p>
+              <p class="cs-value">511.7 h</p>
+            </article>
+            <article class="cs mint">
+              <p class="cs-label">Mejoras cerradas</p>
+              <p class="cs-value">94</p>
+            </article>
+          </section>
 
-        <section class="notes" aria-label="Conclusiones clave">
-          <article class="note">
-            <p class="note-title">Capacidad Operativa</p>
-            <p class="note-text">
-              El trimestre no se apoyó en un único frente. La cobertura se distribuyó entre marcas,
-              formatos y trabajo cross.
-            </p>
-          </article>
-          <article class="note">
-            <p class="note-title">Señal De Madurez</p>
-            <p class="note-text">
-              El arrastre entre sprints no necesariamente indica falla: también muestra seguimiento
-              sobre cambios que no se resuelven en un solo corte.
-            </p>
-          </article>
-          <article class="note">
-            <p class="note-title">Mensaje Para Stakeholders</p>
-            <p class="note-text">
-              El aporte de QA en Q1 fue sostener ritmo de cambio con visibilidad, continuidad y
-              lectura temprana del riesgo.
-            </p>
-          </article>
+          <div class="main-grid">
+            <article class="panel" aria-labelledby="flow-title">
+              <div class="panel-head">
+                <h3 class="panel-title" id="flow-title">
+                  Flujo por sprint: mejoras vs bugs
+                </h3>
+              </div>
+
+              <div class="mix-list">
+                <div>
+                  <div class="mix-row">
+                    <div class="mix-meta">
+                      <span class="mix-name">Sprint 1</span>
+                      <span class="mix-total">43</span>
+                    </div>
+                    <div class="mix-stack">
+                      <div class="mix-line">
+                        <span class="mix-line-label">Mejoras</span>
+                        <div class="mix-track">
+                          <div
+                            class="mix-fill improvements"
+                            style="width: 24%"
+                          ></div>
+                        </div>
+                        <span class="mix-line-value">24</span>
+                      </div>
+
+                      <div class="mix-line">
+                        <span class="mix-line-label">Bugs</span>
+                        <div class="mix-track">
+                          <div class="mix-fill bugs" style="width: 14%"></div>
+                        </div>
+                        <span class="mix-line-value">14</span>
+                      </div>
+
+                      <div class="mix-line">
+                        <span class="mix-line-label">Innovación</span>
+                        <div class="mix-track">
+                          <div
+                            class="mix-fill innovation"
+                            style="width: 5%"
+                          ></div>
+                        </div>
+                        <span class="mix-line-value">5</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mix-divider" aria-hidden="true"></div>
+                <div>
+                  <div class="mix-row">
+                    <div class="mix-meta">
+                      <span class="mix-name">Sprint 2</span>
+                      <span class="mix-total">59</span>
+                    </div>
+                    <div class="mix-stack">
+                      <div class="mix-line">
+                        <span class="mix-line-label">Mejoras</span>
+                        <div class="mix-track">
+                          <div
+                            class="mix-fill improvements"
+                            style="width: 23%"
+                          ></div>
+                        </div>
+                        <span class="mix-line-value">23</span>
+                      </div>
+                      <div class="mix-line">
+                        <span class="mix-line-label">Bugs</span>
+                        <div class="mix-track">
+                          <div class="mix-fill bugs" style="width: 23%"></div>
+                        </div>
+                        <span class="mix-line-value">23</span>
+                      </div>
+
+                      <div class="mix-line">
+                        <span class="mix-line-label">Innovación</span>
+                        <div class="mix-track">
+                          <div
+                            class="mix-fill innovation"
+                            style="width: 13%"
+                          ></div>
+                        </div>
+                        <span class="mix-line-value">13</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mix-divider" aria-hidden="true"></div>
+                <div>
+                  <div class="mix-row">
+                    <div class="mix-meta">
+                      <span class="mix-name">Sprint 3</span>
+                      <span class="mix-total">75</span>
+                    </div>
+                    <div class="mix-stack">
+                      <div class="mix-line">
+                        <span class="mix-line-label">Mejoras</span>
+                        <div class="mix-track">
+                          <div
+                            class="mix-fill improvements"
+                            style="width: 47%"
+                          ></div>
+                        </div>
+                        <span class="mix-line-value">47</span>
+                      </div>
+                      <div class="mix-line">
+                        <span class="mix-line-label">Bugs</span>
+                        <div class="mix-track">
+                          <div class="mix-fill bugs" style="width: 25%"></div>
+                        </div>
+                        <span class="mix-line-value">25</span>
+                      </div>
+
+                      <div class="mix-line">
+                        <span class="mix-line-label">Innovación</span>
+                        <div class="mix-track">
+                          <div
+                            class="mix-fill innovation"
+                            style="width: 3%"
+                          ></div>
+                        </div>
+                        <span class="mix-line-value">3</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="panel coverage-panel"
+              aria-labelledby="coverage-title"
+            >
+              <div class="panel-head">
+                <h3 class="panel-title" id="coverage-title">
+                  Cobertura del negocio por formato
+                </h3>
+                <p class="panel-note">Mejoras Q1 por formato</p>
+              </div>
+
+              <div class="coverage-list">
+                <div class="coverage-row">
+                  <span class="coverage-label">GetTheLook</span>
+                  <div class="coverage-track">
+                    <div class="coverage-fill" style="width: 27%"></div>
+                  </div>
+                  <span class="coverage-value">27</span>
+                </div>
+                <div class="coverage-row">
+                  <span class="coverage-label">Cross</span>
+                  <div class="coverage-track">
+                    <div class="coverage-fill" style="width: 26%"></div>
+                  </div>
+                  <span class="coverage-value">26</span>
+                </div>
+                <div class="coverage-row">
+                  <span class="coverage-label">Farmacity</span>
+                  <div class="coverage-track">
+                    <div class="coverage-fill" style="width: 17%"></div>
+                  </div>
+                  <span class="coverage-value">17</span>
+                </div>
+                <div class="coverage-row">
+                  <span class="coverage-label">TheFoodMarket</span>
+                  <div class="coverage-track">
+                    <div class="coverage-fill" style="width: 15%"></div>
+                  </div>
+                  <span class="coverage-value">15</span>
+                </div>
+                <div class="coverage-row">
+                  <span class="coverage-label">Simplicity</span>
+                  <div class="coverage-track">
+                    <div class="coverage-fill" style="width: 9%"></div>
+                  </div>
+                  <span class="coverage-value">9</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <section
+            class="cards-grid three"
+            aria-label="Implementaciones destacadas"
+          >
+            <article class="card completion-card">
+              <div class="card-top">
+                <span class="card-chip brand-farmacity">Completitud</span>
+              </div>
+              <h3 class="card-title">Tareas completadas Q1</h3>
+              <div class="completion-stack" aria-label="Completitud mensual Q1">
+                <div class="completion-line">
+                  <span class="completion-label">Enero</span>
+                  <div class="completion-track">
+                    <div class="completion-fill" style="width: 44%"></div>
+                  </div>
+                  <span class="completion-value">44%</span>
+                </div>
+                <div class="completion-line">
+                  <span class="completion-label">Febrero</span>
+                  <div class="completion-track">
+                    <div class="completion-fill" style="width: 52%"></div>
+                  </div>
+                  <span class="completion-value">52%</span>
+                </div>
+                <div class="completion-line">
+                  <span class="completion-label">Marzo</span>
+                  <div class="completion-track">
+                    <div class="completion-fill" style="width: 60%"></div>
+                  </div>
+                  <span class="completion-value">60%</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <span class="card-chip brand-getthelook">Innovación</span>
+              </div>
+              <h3 class="card-title">Automatización de pruebas</h3>
+              <p class="card-copy">
+                Se está avanzando en la generación de una suit de automatización
+                de pruebas.
+              </p>
+              <p class="card-state">
+                Se busca reducir un 30% las pruebas manuales.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <span class="card-chip brand-thefoodmarket">Innovación</span>
+              </div>
+              <h3 class="card-title">Documentacion tecnica</h3>
+              <p class="card-copy">
+                Se crearon varias documentaciones tecnicas para el equipo y
+                nuevos ingresos.
+              </p>
+              <p class="card-state">Finalizado.</p>
+            </article>
+          </section>
         </section>
       </div>
     </main>

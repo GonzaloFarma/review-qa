@@ -1,0 +1,571 @@
+Resumen,Clave de incidencia,ID de la incidencia,Tipo de Incidencia,Estado,Clave del proyecto,Nombre del proyecto,Tipo de proyecto,Responsable del proyecto,ID del responsable del proyecto,Descripción del proyecto,Prioridad,Resolución,Persona asignada,ID de la persona asignada,Informador,ID del informador,Creador,ID del creador,Creada,Actualizada,Vista por Última Vez,Resuelta,Fecha de vencimiento,Votos,Etiquetas,Etiquetas,Descripción,Entorno,Interesados,Interesados,Interesados,ID de los interesados,ID de los interesados,ID de los interesados,Registrar Horas de Trabajo,Registrar Horas de Trabajo,Estimación original,Trabajo restante estimado,Tiempo Trabajado,Relación de trabajo,Σ Estimación original,Σ Trabajo restante estimado,Σ Tiempo empleado,Nivel de Seguridad,Enlace de incidencia saliente (Blocks),Enlace de incidencia saliente (Blocks),Enlace de incidencia saliente (Blocks),Enlace de incidencia saliente (Blocks),Adjunto,Adjunto,Adjunto,Adjunto,Adjunto,Adjunto,Campo personalizado (% Consumo capacity),Campo personalizado (Approvals),Campo personalizado (Capacity Sprint (horas)),Campo personalizado (Category),Campo personalizado (Change completion date),Campo personalizado (Change reason),Campo personalizado (Change risk),Campo personalizado (Change start date),Campo personalizado (Change type),Campo personalizado (Checklist Completed),Campo personalizado (Checklist Content YAML),Campo personalizado (Checklist Progress),Campo personalizado (Checklist Progress %),Campo personalizado (Checklist Text),Campo personalizado (Checklist Text (view-only)),Campo personalizado (Checklist last update),Campo personalizado (Closed checklist items),Campo personalizado (Comentarios),Campo personalizado (Criticidad),Campo personalizado (Desarrollo),Campo personalizado (Descripción del Requerimiento:),Campo personalizado (Eje VNP),Campo personalizado (Elementos vinculados),Campo personalizado (Epic Color),Campo personalizado (Epic Name),Campo personalizado (Epic Status),Campo personalizado (Estado de la entrega),Campo personalizado (Estado del proyecto de Atlassian),Campo personalizado (Estimacion QA 2),Campo personalizado (Estimación),Campo personalizado (Estimación ),Campo personalizado (Estimación Deploy),Campo personalizado (Estimación Dev),Campo personalizado (Estimación QA),Campo personalizado (Estimación de la iniciativa),Campo personalizado (Estimación de puntos de historia),Campo personalizado (Formato),Campo personalizado (Horas Asignadas Sprint),Campo personalizado (Idea archivada),Campo personalizado (Idea archivada el),Campo personalizado (Impact),Campo personalizado (Información),Campo personalizado (Issue color),Campo personalizado (Locked forms),Campo personalizado (Número de Prioridad en Ecosistema),Campo personalizado (Objetivos),Campo personalizado (Open checklist items),Campo personalizado (Open forms),Campo personalizado (Progreso de la entrega),Campo personalizado (Project overview key),Campo personalizado (Project overview status),Campo personalizado (Proyecto de Atlassian),Campo personalizado (Rank),Campo personalizado (Request Type),Campo personalizado (Request participants),Campo personalizado (Segunda Estimacion),Campo personalizado (Semáforo Capacity),Campo personalizado (Sentiment),Sprint,Sprint,Sprint,Sprint,Campo personalizado (Start date),Campo personalizado (Story Points),Campo personalizado (Submitted forms),Campo personalizado (Target end),Campo personalizado (Target start),Campo personalizado (Team),Campo personalizado (Total forms),Campo personalizado (Total number of checklist items),Campo personalizado (Vulnerability),Campo personalizado ([CHART] Date of First Response),Campo personalizado ([CHART] Time in Status),Campo personalizado (Áreas de enfoque),Comentario,Comentario,Comentario,Comentario,Comentario,Categoría de estado,Categoría de estado cambiada
+QA - [Bug] - [FARMA] | PROD - No se está sumando el costo de envío en el minicart,TQD-429,25599,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Carla Dama,63af12a7f3e7004f77fd94f1,Carla Dama,63af12a7f3e7004f77fd94f1,11/sep/25 4:51 PM,15/ene/26 10:24 AM,,12/ene/26 1:05 PM,,0,,,Tkt summa: [https://infracommerce.atlassian.net/browse/FARMA-4635|https://infracommerce.atlassian.net/browse/FARMA-4635|smart-link] ,,Carla Dama,Fernanda,,63af12a7f3e7004f77fd94f1,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,,,,,,,,,,,,,,01/dic/25 9:29 AM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;Captura de pantalla 2025-12-01 075010.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22056,01/dic/25 9:29 AM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;Captura de pantalla 2025-12-01 075128.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22055,18/nov/25 3:09 PM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;Suma minicart domicilio.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/21911,18/nov/25 3:09 PM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;suma minicart retiro en punto.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/21912,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3a66f908,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,XS,,,XXS,,S,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzr,,,,,,Sprint 22,Sprint 23,Sprint 24,Sprint 1,,,,,,,,,,2025-11-18 18:07:47.779,10173_*:*_1_*:*_3637409531_*|*_10175_*:*_2_*:*_1964039747_*|*_10169_*:*_1_*:*_3951283837_*|*_10235_*:*_2_*:*_1032916603_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_3_*:*_23771687,,"18/nov/25 3:07 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;El bug persiste.
+
+*_⚠️ Envío a domicilio y retiro en punto Pickit_*
+El costo de envío se muestra, pero no se suma en el minicart.
+El monto total mostrado no coincide entre las tres vistas, en el ícono de la home y en el cart, se muestra el valor correcto con el costo de envío.
+
+⚠️*_Retiro en punto Pickit_*
+
+El sistema primero muestra un valor de costo de envío y luego otro valor diferente.
+
+*Evidencia*
+-Envio a domicilio.
+
+!suma minicart retiro en punto.png|width=600,alt=""suma minicart retiro en punto.png""!
+
+-Retiro en punto
+
+!Suma minicart domicilio.png|width=600,alt=""Suma minicart domicilio.png""!","01/dic/25 9:29 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;Se verifico nuevamente en [https://bruno--farmacityar.myvtex.com/|https://bruno--farmacityar.myvtex.com/].
+Todos los flujos funcionan correctamente en el ambiente indicado. 
+El costo de envío se suma en el total de la compra en ambos casos y los totales coinciden en la Home, Minicart, Cart y Checkout. 
+Ademas, el toast de envio gratis, no se visualiza en ninguno de los casos cuando no se alcanza el monto mínimo de compra, tal como se espera.
+
+
+!Captura de pantalla 2025-12-01 075128.png|width=480,alt=""Captura de pantalla 2025-12-01 075128.png""!
+
+!Captura de pantalla 2025-12-01 075010.png|width=484,alt=""Captura de pantalla 2025-12-01 075010.png""!",12/ene/26 11:55 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validó OK en [https://preprod--farmacityar.myvtex.com/|https://preprod--farmacityar.myvtex.com/],,,Listo,12/ene/26 1:05 PM
+QA- [Bug] - [Farma] | Retiro en tienda (PUP) muestra costo en minicart cuando debería ser GRATIS,TQD-626,29690,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,29/dic/25 2:03 PM,15/ene/26 10:19 AM,,12/ene/26 1:13 PM,,0,,,"➡️ Ambiente: [https://www.farmacity.com/|https://www.farmacity.com/|smart-link] 
+
+
+->Carrito / Minicart
+
+->Retiro en tienda (PUP)
+
+➡️ Al seleccionar modalidad *Retiro en tienda (PUP)*, el *minicart muestra un costo de retiro*, cuando según la configuración de la tienda en *Masterdata el retiro debería ser gratuito*.
+
+El valor se corrige al *refrescar la página*, lo que indica un posible problema de *actualización/render inicial del minicart*.
+
+h3. 🔁 *Pasos para reproducir*
+
+# Ingresar a [http://farmacity.com|http://farmacity.com|smart-link] 
+# Agregar un producto al carrito
+# Seleccionar *Retiro en tienda (PUP)*
+# Abrir el *minicart*
+# Observar el costo de retiro
+
+
+Evidencia :  
+
+
+h3. ❌ *Resultado actual*
+
+{quote}El minicart muestra un *costo de retiro*, aunque debería ser gratis.
+
+{quote}
+
+!image-20251229-165938.png|width=647,alt=""image-20251229-165938.png""!
+
+!image-20251229-170025.png|width=671,alt=""image-20251229-170025.png""!
+
+!image-20251229-170054.png|width=671,alt=""image-20251229-170054.png""!
+
+h3. ✅ *Resultado esperado*
+
+{quote}El minicart debe mostrar *retiro GRATIS* de forma consistente, sin necesidad de refrescar.{quote}",,Alixandry Acosta,,,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,,,,,,,,,,,,,,,,,29/dic/25 2:03 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20251229-165938.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22910,29/dic/25 2:03 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20251229-170025.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22908,29/dic/25 2:03 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20251229-170054.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22909,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@17acf090,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,XS,,XS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzy,,,,,,Sprint 24,Sprint 1,,,,,,,,,,,,,10170_*:*_1_*:*_262067603_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_330982386_*|*_10235_*:*_1_*:*_86229197_*|*_10236_*:*_1_*:*_1271408,,"06/ene/26 11:05 AM;712020:72a883cb-daae-455f-8fa3-e84f57418ab6;
+
+h2. (/) Validación QA – Retiro en tienda (PUP)
+
+-->Se valida en workspace DEV el correcto funcionamiento del *Retiro en tienda (PUP)*.
+-->Al agregar *dos productos* al carrito y seleccionar PUP, el minicart muestra *“Retiro en punto cercano: Gratis”*.
+
+-->Al agregar un *tercer producto*, el costo de retiro *se mantiene como Gratis*, sin inconsistencias.
+
+-->El comportamiento es correcto desde el *primer render*, sin necesidad de refrescar la página.
+
+-->Se continúa el flujo de compra y se verifica el comportamiento *hasta el paso 3 del checkout*, manteniéndose el retiro *sin costo*.","12/ene/26 11:06 AM;712020:72a883cb-daae-455f-8fa3-e84f57418ab6;(/) Validado en prepro: 
+
+",,,,Listo,12/ene/26 1:13 PM
+QA - [BUG] - [TFM] | Error en validar digito verificador - Factura A,TQD-620,29578,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,23/dic/25 9:43 AM,26/ene/26 8:27 PM,,22/ene/26 11:14 AM,,0,Factura-A,,"h2. 📌 Alcance (según comentarios más recientes del ticket)
+
+* ✔️ El *CUIT puede terminar en 0*. Se retiró la validación que lo rechazaba.
+* ✔️ El sistema *no debe autocompletar* el último dígito; solo *valida* el CUIT ingresado contra la *fórmula*.
+* ✔️ *Regla especial:* si la fórmula arroja *10*, el sistema *valida como 9*.
+* ❌ Si la fórmula arroja *1 (resto 1)*, el CUIT *es inválido* (por la misma regla anterior, el DV esperado se considera *9*; si el último dígito no es 9, debe fallar).",,Gonzalo Martin Estevez,,,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,,,,,,,,,,,,,,,,,23/dic/25 10:45 AM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20251223-134325.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22791,23/dic/25 10:45 AM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20251223-134352.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22792,23/dic/25 10:45 AM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20251223-134411.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22794,23/dic/25 10:45 AM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20251223-134436.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22795,23/dic/25 10:45 AM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20251223-134457.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22796,23/dic/25 10:45 AM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20251223-134522.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22793,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@635cf82d,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzy,,,,,,Sprint 24,Sprint 1,,,,,,,,,,,,,10170_*:*_1_*:*_4441_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_31339_*|*_10235_*:*_1_*:*_2361_*|*_10236_*:*_1_*:*_9323073,,"23/dic/25 10:45 AM;712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213;h2. ✅ Casos de prueba (funcionales y validaciones)
+
+h3. A. Validación de CUIT
+
+# *TFM-FCA-001 — Aceptar CUIT con DV = 0*
+#* *Pasos:* Ingresar un CUIT válido cuyo último dígito sea 0.
+#* *Datos sugeridos:* {{20100000130}} (válido).
+#* *Resultado esperado:* Pasa validación; permite avanzar.
+
+!image-20251223-134325.png|width=706,alt=""image-20251223-134325.png""!
+
+# *TFM-FCA-002 — Regla especial: fórmula = 10 ⇒ validar como 9*
+#* *Pasos:* Ingresar un CUIT donde la fórmula dé resultado 10.
+#* *Datos sugeridos:* {{20100000059}} (válido por regla especial, DV=9).
+#* *Resultado esperado:* Pasa validación; permite avanzar.
+
+!image-20251223-134352.png|width=707,alt=""image-20251223-134352.png""!
+
+# *TFM-FCA-003 — Rechazar CUIT con DV = 0 si no coincide con la fórmula*
+#* *Pasos:* Ingresar un CUIT con último dígito 0, pero que *no* sea el esperado por la fórmula.
+#* *Datos sugeridos:* {{20100000131}} (inválido; el DV esperado es 0).
+#* *Resultado esperado:* Mensaje de error: CUIT inválido.
+
+!image-20251223-134411.png|width=717,alt=""image-20251223-134411.png""!
+
+# *TFM-FCA-004 — Longitud inválida (≠ 11 dígitos)*
+#* *Pasos:* Ingresar 10 dígitos {{3071637179}}.
+#* *Resultado esperado:* Error de formato/longitud.
+
+!image-20251223-134436.png|width=671,alt=""image-20251223-134436.png""!
+
+# *TFM-FCA-005 — Caracteres no numéricos*
+#* *Pasos:* Ingresar {{30A1637B790}}.
+#* *Resultado esperado:* Error de formato (solo dígitos).
+
+!image-20251223-134457.png|width=672,alt=""image-20251223-134457.png""!
+
+# *TFM-FCA-006 — No autocompletar el DV*
+#* *Pasos:* Escribir el CUIT completo *manualmente* y verificar que el sistema *no calcule* el 11° dígito por sí mismo.
+#* *Datos sugeridos:* {{30716371790}} (de tu captura).
+#* *Resultado esperado:* El campo no autocompleta; solo valida al enviar.
+
+!image-20251223-134522.png|width=707,alt=""image-20251223-134522.png""!",,,,,Listo,22/ene/26 11:14 AM
+QA - [BUG] - [TFM] | No funciona repetir pedido,TQD-622,29614,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,,,Giselle De Freitas,628663d556b8470069787fdc,Giselle De Freitas,628663d556b8470069787fdc,23/dic/25 2:48 PM,05/ene/26 12:32 PM,,05/ene/26 12:32 PM,,0,,,[https://infracommerce.atlassian.net/browse/TFM-607|https://infracommerce.atlassian.net/browse/TFM-607|smart-link] ,,Giselle De Freitas,,,628663d556b8470069787fdc,,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6401ad0b,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzi,,,,,,Sprint 24,Sprint 1,,,,,,,,,,,,,10170_*:*_1_*:*_853282206_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_67837_*|*_10235_*:*_1_*:*_3266_*|*_10236_*:*_1_*:*_3415,,,,,,,Listo,05/ene/26 12:32 PM
+QA - [BUG] - Producción - [SIMPLI] | Se visualiza inconsistencias regionalización mostrada en el header.,TQD-603,29154,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,11/dic/25 5:21 PM,29/ene/26 3:02 PM,,29/ene/26 10:21 AM,,0,,,"🎟️ TKT Summa: [https://infracommerce.atlassian.net/browse/SIMPLI-590|https://infracommerce.atlassian.net/browse/SIMPLI-590|smart-link] 
+*Descripción:*
+Se realizó compra y al finalizar la orden, se muestra en el header otra regionalización diferente a la confirmada en el pedido.
+
+🧪 *Paso a Paso para Reproducir:*
+Loguearse
+Ingresar a [https://www.simplicity.com.ar/|https://www.simplicity.com.ar/|smart-link] 
+Regionalizarse
+Agregar productos al carrito 
+Avanzar a checkout
+Confirmar compra
+
+
+✅ *Resultado Esperado:*
+
+Se espera que la regionalización mostrada en el header sea consistente a lo ingresado en el pedido. (Retiro en tienda) Viedma [Belgrano 321] 8500 Viedma, Río Negro.
+
+❌ *Resultado Observado:*
+
+Se visualiza en el header la regionalización: Envío a domicilio) Islas Malvinas 583, 8500, Adolfo Alsina ( 
+La regionalización correcta es la mostrada en la confirmación del pedido: (Retiro en tienda) Viedma [Belgrano 321] 8500 Viedma, Río Negro.
+
+📁 *Evidencia:*
+
+
+!imagen (2).png|width=671,alt=""imagen (2).png""!",,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,,,,,,,,,,,,,,,11/dic/25 5:21 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;imagen (2).png;https://famacityar.atlassian.net/rest/api/3/attachment/content/22435,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@67dcfcf,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzw,,,,,,Sprint 1,,,,,,,,,,,,,,10170_*:*_1_*:*_4701_*|*_10174_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_2140500179_*|*_10235_*:*_1_*:*_594427439_*|*_10236_*:*_1_*:*_1320832961,,,,,,,Listo,29/ene/26 10:21 AM
+QA- [Bug] - [Farma] | Checkout simula stock contra SKU dummy y bloquea la compra,TQD-662,30329,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,15/ene/26 4:28 PM,10/feb/26 8:44 PM,,09/feb/26 5:34 PM,,0,,,"Al intentar comprar el producto *244822 – Pañales Pampers Premium Care Talle XXXG x 52*, el sitio permite avanzar hasta *Checkout – Paso 2 (Métodos de envío)*, pero al confirmar la ubicación se informa que el producto no está disponible en la zona seleccionada.
+
+la *simulación de stock/envío se realiza contra un SKU dummy*, y no contra el *SKU real (244822)* que el usuario intenta agregar al carrito.
+Esto provoca que el sistema asigne la sucursal *318* como origen de envío, la cual *no posee stock*, generando un bloqueo incorrecto del flujo de compra.
+
+
+
+h2. 🔁 Pasos para reproducir
+
+
+# Ingresar a [http://Farmacity.com|http://Farmacity.com|smart-link] 
+# Buscar el producto *244822 – Pañales Pampers Premium Care Talle XXXG x 52*
+# Agregar el producto al carrito
+# Avanzar a checkout
+# Seleccionar *Envío a domicilio*
+# Confirmar ubicación (Ej: Av. Rafael Núñez 4473, Córdoba)
+# Avanzar a *Paso 2 – Métodos de envío*
+
+
+
+h2. ❌ Resultado actual
+
+
+-El sistema indica que *no hay stock en la zona seleccionada*
+
+-Solicita eliminar el producto o cambiar ubicación
+
+-El usuario no puede continuar la compra
+
+-La simulación se ejecuta contra un *SKU dummy* y toma como origen la *sucursal 318 sin stock*
+
+h2. (/) Resultado esperado
+
+
+-La simulación de stock y envío debería ejecutarse contra el *SKU real (244822)*
+
+-Validar stock correcto por sucursal/zona
+
+-Permitir continuar el flujo de compra si existe stock válido
+
+-Evitar mensajes erróneos que obliguen al usuario a cambiar de zona o producto.
+
+Evidencia:
+
+
+
+!image-20260115-192321.png|width=671,alt=""image-20260115-192321.png""!
+
+!image-20260115-192352.png|width=671,alt=""image-20260115-192352.png""!
+
+!image-20260115-192639.png|width=671,alt=""image-20260115-192639.png""!",,Alixandry Acosta,,,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,,,,,,,,,,,,,,,,,15/ene/26 4:28 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20260115-192321.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23184,15/ene/26 4:28 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20260115-192352.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23182,15/ene/26 4:28 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20260115-192639.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23183,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@453c382b,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,S,,,XXS,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzwzr,,,,,,Sprint 1,Sprint 2,,,,,,,,,,,,,10170_*:*_2_*:*_13192_*|*_10173_*:*_1_*:*_0_*|*_10175_*:*_1_*:*_87526961_*|*_10169_*:*_1_*:*_338693252_*|*_10235_*:*_2_*:*_31902_*|*_10236_*:*_2_*:*_494665182,,,,,,,Listo,09/feb/26 5:34 PM
+QA - [BUG] - [FARMA] | Search - Error en sombras,TQD-633,29907,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,romina.galie,638dfff98fd2d2d5f131cd23,romina.galie,638dfff98fd2d2d5f131cd23,05/ene/26 12:26 PM,15/ene/26 10:19 AM,,12/ene/26 1:09 PM,,0,,,"+Ticket Infra:+
+[https://infracommerce.atlassian.net/browse/FARMA-4781|https://infracommerce.atlassian.net/browse/FARMA-4781|smart-link] ",,romina.galie,,,638dfff98fd2d2d5f131cd23,,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7f5e5680,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzz,,,,,,Sprint 1,,,,,,,,,,,,,,10170_*:*_1_*:*_5552_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_1605927_*|*_10235_*:*_1_*:*_80260487_*|*_10236_*:*_1_*:*_19649842,,,,,,,Listo,12/ene/26 1:09 PM
+[BUG] - [SIMPLI] Error en visualización de cards (textiles),TQD-625,29689,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Florencia,712020:de338c15-71d5-4e85-820d-68578a956181,Florencia,712020:de338c15-71d5-4e85-820d-68578a956181,29/dic/25 1:52 PM,15/ene/26 10:24 AM,,13/ene/26 12:16 PM,,0,,,"Buenas Equipo! Como están?
+
+Les comparto el ticket a summa: [https://infracommerce.atlassian.net/browse/SIMPLI-596|https://infracommerce.atlassian.net/browse/SIMPLI-596|smart-link]  
+
+Listo para testear: [+https://dev--simplicityar.myvtex.com/+|https://dev--simplicityar.myvtex.com/]
+
+Muchas gracias!
+
+Saludos 😉",,Fernanda,Florencia,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,712020:de338c15-71d5-4e85-820d-68578a956181,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1592961,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzv,,,,,,Sprint 1,,,,,,,,,,,,,2026-01-07 20:17:13.959,10170_*:*_1_*:*_4085_*|*_10173_*:*_1_*:*_499808666_*|*_10169_*:*_1_*:*_598285249_*|*_10235_*:*_1_*:*_184127661_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_7472590,,"07/ene/26 5:17 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Validado en [+https://dev--simplicityar.myvtex.com/+|https://dev--simplicityar.myvtex.com/]
+Las cards se visualizan correctamente y su comportamiento es el correcto.",13/ene/26 12:16 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validó OK en Preprod [+https://preprod--simplicityar.myvtex.com/+|https://preprod--simplicityar.myvtex.com/],,,,Listo,13/ene/26 12:16 PM
+QA - [SIMPLI] - Ajustes visuales -  Landing Promociones & Eventos,TQD-627,29773,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Florencia,712020:de338c15-71d5-4e85-820d-68578a956181,Florencia,712020:de338c15-71d5-4e85-820d-68578a956181,02/ene/26 2:45 PM,27/ene/26 5:08 PM,,27/ene/26 5:08 PM,,0,,,"Buenas Equipo! Espero que estén muy bien!
+
+Les comparto el ticket relacionado:  [https://infracommerce.atlassian.net/browse/SIMPLI-600|https://infracommerce.atlassian.net/browse/SIMPLI-600|smart-link] 
+
+Muchas gracias!!",,Fernanda,Florencia,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,712020:de338c15-71d5-4e85-820d-68578a956181,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@548a6524,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzz,,,,,,Sprint 1,,,,,,,,,,,,,2026-01-13 20:04:05.287,10170_*:*_1_*:*_5576_*|*_10173_*:*_1_*:*_1123276950_*|*_10169_*:*_1_*:*_862349967_*|*_10235_*:*_1_*:*_6150_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_96429253,,"13/ene/26 5:04 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/)  Validado en [+https://simpli600--simplicityar.myvtex.com/promociones-y-eventos-2+|https://simpli600--simplicityar.myvtex.com/promociones-y-eventos-2]
+[https://docs.google.com/document/d/1tXiWr3BJwboDb1ehnYXd46TLsjh0LEe_MWfjdAK7z3g/edit?usp=sharing|https://docs.google.com/document/d/1tXiWr3BJwboDb1ehnYXd46TLsjh0LEe_MWfjdAK7z3g/edit?usp=sharing|smart-link] ",26/ene/26 5:04 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891; (/) Validado OK en [https://preprod--simplicityar.myvtex.com/promociones-y-eventos-2|https://preprod--simplicityar.myvtex.com/promociones-y-eventos-2],,,,Listo,27/ene/26 5:08 PM
+QA - [SIMPLI] | Arreglo de filtros de simpli y etiquetas,TQD-663,30398,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Juan Manuel Mombiela,60f02a632f97d50069064440,Juan Manuel Mombiela,60f02a632f97d50069064440,20/ene/26 10:13 AM,15/abr/26 9:28 AM,31/mar/26 9:21 AM,06/abr/26 4:23 PM,,0,,,[https://infracommerce.atlassian.net/browse/SIMPLI-612|https://infracommerce.atlassian.net/browse/SIMPLI-612|smart-link] ,,Gonzalo Martin Estevez,Juan Manuel Mombiela,Tomas Francisco Rodriguez Maziere,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,60f02a632f97d50069064440,615482849cdb9300722c70c7,,,,,,,,,,,,,,,26/ene/26 11:48 AM;ug:5b67aecd-bd99-4628-9467-9efb402189da;image-20260126-144704.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23558,26/ene/26 11:48 AM;ug:5b67aecd-bd99-4628-9467-9efb402189da;image-20260126-144730.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23557,26/ene/26 11:48 AM;ug:5b67aecd-bd99-4628-9467-9efb402189da;image-20260126-144752.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23559,28/ene/26 4:09 PM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20260128-190918.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23791,28/ene/26 4:10 PM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20260128-191034.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23792,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2c256812,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugo,,,,,,Sprint 1,Sprint 2,Sprint 4,,,,,,,,,,,2026-01-26 14:48:55.887,10170_*:*_2_*:*_603778585_*|*_10171_*:*_1_*:*_4067830622_*|*_10173_*:*_1_*:*_0_*|*_10175_*:*_1_*:*_101913923_*|*_10169_*:*_1_*:*_1896636_*|*_10235_*:*_3_*:*_184309386_*|*_10236_*:*_3_*:*_1083734509,,"26/ene/26 11:48 AM;615482849cdb9300722c70c7;Se modificaron los filtros de promociones para que apliquen con la nueva nomenclatura de promociones por los cambios en la app de etiquetas:
+
+!image-20260126-144704.png|width=1800,alt=""image-20260126-144704.png""!
+
+!image-20260126-144730.png|width=1159,alt=""image-20260126-144730.png""!
+
+!image-20260126-144752.png|width=1159,alt=""image-20260126-144752.png""!
+
+
+
+Se recuerda que el nombre de la promocion debe coincidir con el nombre de la colección para que este sea traido en la busqueda.","28/ene/26 4:09 PM;712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213;Se probo en [https://tfrm--simplicityar.myvtex.com/maquillaje/rostro|https://tfrm--simplicityar.myvtex.com/maquillaje/rostro]
+
+----
+
+(i) Se detecto en la PLP de rostros que no se esta mostrando el chip de filtro de promoción como se muestra en el ambiente desktop del sitio.
+
+!image-20260128-190918.png|width=1070,alt=""image-20260128-190918.png""!
+
+(i) El filtro se muestra en el desplegable.
+
+!image-20260128-191034.png|width=652,alt=""image-20260128-191034.png""!
+
+----","04/feb/26 9:51 AM;615482849cdb9300722c70c7;Nuevos pr a qa:
+
+[https://bitbucket.org/vtex-infralatam/filter-navigator-simar/pull-requests/2/overview|https://bitbucket.org/vtex-infralatam/filter-navigator-simar/pull-requests/2/overview|smart-link] 
+
+[https://bitbucket.org/vtex-infralatam/store-components-simar/pull-requests/138|https://bitbucket.org/vtex-infralatam/store-components-simar/pull-requests/138|smart-link] 
+
+PRs a PROD:
+
+[https://bitbucket.org/vtex-infralatam/filter-navigator-simar/pull-requests/1|https://bitbucket.org/vtex-infralatam/filter-navigator-simar/pull-requests/1|smart-link] 
+
+[https://bitbucket.org/vtex-infralatam/store-components-simar/pull-requests/133|https://bitbucket.org/vtex-infralatam/store-components-simar/pull-requests/133|smart-link] ","05/mar/26 5:23 PM;712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213;h3. Contexto y alcance
+
+Se ejecutó QA funcional y visual sobre etiquetas de promoción (“cucardas”) en el sitio Simplicity AR (workspace tfrm), abarcando PLP, Minicart y Checkout en Desktop y Mobile. Se validaron etiquetas de descuento porcentual, 2x1 / 2x1 combinable, EXCLUSIVO ONLINE, LANZAMIENTOS, mensajes dinámicos asociados a promociones y comportamiento del tooltip informativo en PLP.
+
+h3. Resumen de resultados
+
+- Módulos cubiertos: 5/5 (PLP Desktop, PLP Mobile, Checkout Cart Mobile, Checkout Cart Desktop, Validaciones globales).
+- Casos ejecutados: 27 (incluyendo variaciones por dispositivo).
+- Resultado general: el cálculo de precios y aplicación de beneficios (-% OFF y 2x1) es consistente en PLP y Checkout; las cucardas se muestran y combinan correctamente, manteniendo legibilidad en Desktop y Mobile. Se identifican 5 Issues que afectan principalmente UX mobile y consistencia de mensajes entre vistas.
+
+h3. Issues identificados
+
+* *ISU‑01 – Tooltip ℹ️ en PLP Mobile navega a PDP* (Severidad: Alta). El tap sobre el ícono ℹ️ en etiquetas 2x1 COMBINABLE muestra el tooltip apenas y luego redirige a la PDP por propagación del evento al link principal de la card. Impacta directamente en la comprensión de la promo en mobile.
+* *ISU‑02 – Productos 2x1 sin precio tachado en PLP Mobile* (Severidad: Media, pendiente definición de negocio). En promos 2x1 y EXCL. ONLINE + 2x1 el listPrice llega como null y no se muestra precio tachado, por lo que el usuario no ve un precio de referencia previo a la promoción.
+* *ISU‑03 – Ícono de eliminar duplicado en Checkout Cart Mobile* (Severidad: Media). Cada ítem muestra dos acciones de eliminar (uno dedicado y otro ocupando la posición del botón “–”), generando una UI confusa y potencialmente errores de uso.
+* *ISU‑04 – Botón “–” se convierte en tachito cuando sumas 1 en Checkout Cart Mobile* (Severidad: Media). El control de cantidad cambia de función según la cantidad, mezclando la acción de restar con eliminar, lo que rompe la expectativa del usuario y el contrato del componente.
+* *ISU‑05 – Mensaje dinámico de promoción ausente en minicart Desktop* (Severidad: Media/Baja). El mensaje “No olvides agregar otra unidad para cumplir con la promoción” se muestra correctamente en Checkout Cart (Desktop/Mobile) para productos 2x1, pero no se refleja en el minicart, generando una experiencia inconsistente y menor visibilidad del beneficio cuando el usuario opera solo desde el panel lateral.","30/mar/26 11:51 AM;712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213;Se verifico en: [https://preprod--simplicityar.myvtex.com/|https://preprod--simplicityar.myvtex.com/] 
+
+----
+
+❌  *ISU‑01 – Tooltip ℹ️ en PLP Mobile navega a PDP*
+
+*  El tap sobre el ícono ℹ️ en etiquetas 2x1 COMBINABLE muestra el tooltip apenas y luego redirige a la PDP por propagación del evento al link principal de la card. Impacta directamente en la comprensión de la promo en mobile.
+
+----
+
+Saludos. -
+
+CC: [~accountid:712020:de338c15-71d5-4e85-820d-68578a956181] ",Listo,06/abr/26 4:23 PM
+QA - BUG - Producción - [FARMACITY] - Corregir url que redirige a turnos en sucursales de salud.,TQD-664,30399,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,20/ene/26 11:13 AM,30/ene/26 9:14 AM,,21/ene/26 10:05 AM,,0,,,"Ticket Summa: [https://infracommerce.atlassian.net/browse/FARMA-4804|https://infracommerce.atlassian.net/browse/FARMA-4804|smart-link] 
+
+Ticket - Te ayudo: [https://teayudo.farmacity.com.ar/requests/show/index/id/2889288|https://teayudo.farmacity.com.ar/requests/show/index/id/2889288]
+📄 *Descripción del Bug:*
+Actualmente se visualiza una url incorrecta al ingresar a la reserva de turnos. Se debe corregir por la siguiente url: 
+
+[https://citasfarmacity.appointment.numia.co/|https://citasfarmacity.appointment.numia.co/|smart-link] 
+
+🧪 *Paso a Paso para Reproducir:*
+
+# Ingresar a [https://www.farmacity.com/Farmacity/sucursales|https://www.farmacity.com/Farmacity/sucursales|smart-link]   
+#  Ingresar a una sucursal y al botón Reserva turno aquí
+# 
+
+✅ *Resultado Esperado:*
+Se espera visualizar la url: [https://citasfarmacity.appointment.numia.co/|https://citasfarmacity.appointment.numia.co/|smart-link] 
+
+❌ *Resultado Observado:*
+
+Actualmente residirge al link: [https://turnosges.farmacity.com.ar/turno/nuevo|https://turnosges.farmacity.com.ar/turno/nuevo] arrojando error 404.
+
+📁 *Evidencia:*
+
+
+!Farmacity - Turnos suc - BUG.mp4|width=671,alt=""Farmacity - Turnos suc - BUG.mp4""!",,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,,,,,,,,,,,,,,,20/ene/26 11:13 AM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;Farmacity - Turnos suc - BUG.mp4;https://famacityar.atlassian.net/rest/api/3/attachment/content/23217,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@13616357,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzi,,,,,,Sprint 1,,,,,,,,,,,,,,10170_*:*_1_*:*_3182_*|*_10173_*:*_1_*:*_1210828_*|*_10169_*:*_1_*:*_81032613_*|*_10235_*:*_1_*:*_2883_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_3514,,,,,,,Listo,21/ene/26 10:05 AM
+"QA - [BUG] - [FARMA] | Recuadro negro tapa los campos al intentar cargar un nuevo método de pago en ""Mi perfil""",TQD-677,30783,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,28/ene/26 12:58 PM,10/feb/26 8:44 PM,,10/feb/26 9:50 AM,,0,mi-cuenta,mis-tarjetas,"----
+
+h2. 🐞 Bug – Cuadro negro al crear tarjeta en perfil
+
+h3. *Proyecto*
+
+Farmacity
+
+h3. *Módulo / Sección*
+
+Mi cuenta → Mis tarjetas
+
+h3. *URL*
+
+[https://www.farmacity.com/account/cards/new|https://www.farmacity.com/account/cards/new]
+
+----
+
+h3. *Descripción*
+
+Al intentar crear una nueva tarjeta desde el perfil del usuario, se visualiza un *cuadro negro superpuesto* que cubre gran parte del formulario, impidiendo la correcta visualización y posible interacción con los campos.
+
+----
+
+h3. *Pasos para reproducir*
+
+# Ingresar a [https://www.farmacity.com|https://www.farmacity.com/]
+# Iniciar sesión con un usuario válido
+# Ir a *Mi cuenta*
+# Acceder a *Mis tarjetas*
+# Seleccionar la opción *Agregar / Crear tarjeta*
+
+----
+
+h3. *Resultado actual*
+
+Se muestra un *overlay/cuadro negro* sobre el formulario de carga de tarjeta, bloqueando parcialmente la vista del contenido y afectando la experiencia de usuario.
+
+----
+
+h3. *Resultado esperado*
+
+El formulario de creación de tarjeta debería visualizarse correctamente, sin superposiciones ni elementos gráficos que impidan su uso.
+
+----
+
+h3. *Evidencia*
+
+Se adjunta captura de pantalla donde se observa el cuadro negro cubriendo el formulario.
+
+----
+
+h3. *Impacto*
+
+* Bloquea/afecta el flujo de alta de tarjetas
+* Genera confusión en el usuario
+* Posible abandono del proceso de compra o gestión de cuenta
+
+----
+
+h3. *Severidad*
+
+Alta
+
+h3. *Prioridad*
+
+Alta
+
+----
+
+h3. *Observaciones*
+
+* El comportamiento sugiere un posible problema de *renderizado de un modal, overlay o iframe* (por ejemplo, componente de validación de tarjeta).
+* No se descarta conflicto de estilos (CSS z-index) o carga incompleta de un componente externo.
+
+----",,Gonzalo Martin Estevez,,,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,,,,,,,,,,,,,,,,,28/ene/26 12:59 PM;7d501043-f27b-4edc-816a-02fa12a0b570;image-20260128-155342.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/23692,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@19ebcfb,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,XXS,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzwzv,,,,,,Sprint 1,Sprint 2,,,,,,,,,,,,,10170_*:*_1_*:*_6447_*|*_10173_*:*_1_*:*_1038232533_*|*_10169_*:*_1_*:*_28401_*|*_10235_*:*_1_*:*_3041_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_34430,,"28/ene/26 12:59 PM;712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213;Se verifico en [+https://farma4752--farmacityar.myvtex.com/+|https://farma4752--farmacityar.myvtex.com/]
+
+----
+
+(/) El recuadro negro se encuentra contenido.
+
+!image-20260128-155342.png|width=837,alt=""image-20260128-155342.png""!",,,,,Listo,10/feb/26 9:50 AM
+QA - [SIMPLI] - Ajustes visuales - Landing de Categorías,TQD-594,28643,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Low,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,02/dic/25 10:20 AM,04/feb/26 5:30 PM,,04/feb/26 2:48 PM,,0,,,"🎟️ Tkt summa: [https://infracommerce.atlassian.net/browse/SIMPLI-583|https://infracommerce.atlassian.net/browse/SIMPLI-583|smart-link] 
+*Objetivo:*
+Garantizar que las definiciones visuales sean lo que se presenta en el desarrollo final.
+
+*Alcance:*
+
+*Figma:* [https://www.figma.com/design/DiaxDPdENuBC8W6zcltplA/Landing-de-Categor%C3%ADas-N1-%7C-EVOL.-E-Commerce-Simplicity?node-id=395-10131&m=dev|https://www.figma.com/design/DiaxDPdENuBC8W6zcltplA/Landing-de-Categor%C3%ADas-N1-%7C-EVOL.-E-Commerce-Simplicity?node-id=395-10131&m=dev|smart-link]  
+
+Vinculado al desarrollo: [https://infracommerce.atlassian.net/browse/SIMPLI-573|https://infracommerce.atlassian.net/browse/SIMPLI-573|smart-link]
+
+*Documento con detalle de reportes:*
+
+
+[^Landing de Categorías - Testeo visual Nov 28-11-2025.docx]
+
+",,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,,,,,,,,,,,,,,,02/dic/25 10:20 AM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;Landing de Categorías - Testeo visual Nov 28-11-2025.docx;https://famacityar.atlassian.net/rest/api/3/attachment/content/22089,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@34d3a3ad,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,XXS,,S,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzww,,,,,,Sprint 1,Sprint 2,,,,,,,,,,,,,10170_*:*_1_*:*_4985_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_4334683891_*|*_10235_*:*_1_*:*_2532353_*|*_10236_*:*_1_*:*_419042687,,,,,,,Listo,04/feb/26 2:48 PM
+QA - [BUG] -  [TFM] | Error en la visualización por default del crédito,TQD-670,30536,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Giselle De Freitas,628663d556b8470069787fdc,Giselle De Freitas,628663d556b8470069787fdc,21/ene/26 12:14 PM,24/feb/26 1:10 PM,,24/feb/26 12:53 PM,,0,,,[https://infracommerce.atlassian.net/browse/TFM-616|https://infracommerce.atlassian.net/browse/TFM-616|smart-link] ,,Giselle De Freitas,,,628663d556b8470069787fdc,,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3bf1d81a,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5fv,,,,,,Sprint 2,,,,,,,,,,,,,,10170_*:*_2_*:*_5831_*|*_10173_*:*_1_*:*_82119635_*|*_10175_*:*_1_*:*_1016123816_*|*_10169_*:*_1_*:*_10984_*|*_10235_*:*_2_*:*_1383233728_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_2_*:*_449869243,,,,,,,Listo,24/feb/26 12:53 PM
+"QA - [BUG] - [FARMA] | Diferencia en tiempo promesa de retiro en pantalla ""Finalizar la compra""",TQD-692,31137,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,romina.galie,638dfff98fd2d2d5f131cd23,romina.galie,638dfff98fd2d2d5f131cd23,02/feb/26 11:20 AM,25/feb/26 4:16 PM,,25/feb/26 4:16 PM,,0,,,[https://infracommerce.atlassian.net/browse/FARMA-4762|https://infracommerce.atlassian.net/browse/FARMA-4762|smart-link] ,,Fernanda,romina.galie,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,638dfff98fd2d2d5f131cd23,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7ddc4440,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5i,,,,,,Sprint 2,,,,,,,,,,,,,2026-02-25 14:10:05.398,10170_*:*_2_*:*_13494_*|*_10173_*:*_1_*:*_1104008798_*|*_10175_*:*_1_*:*_89668750_*|*_10169_*:*_1_*:*_10607894_*|*_10235_*:*_2_*:*_679058662_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_2_*:*_103156590,,25/feb/26 11:10 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validó OK en preprod: [https://preprod--farmacityar.myvtex.com/|https://preprod--farmacityar.myvtex.com/],,,,,Listo,25/feb/26 4:16 PM
+"QA - [BUG] - [TFM] | Al loguearme, puedo sumar productos al minicart, sin estar regionalizado.",TQD-725,31761,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Carla Dama,63af12a7f3e7004f77fd94f1,Carla Dama,63af12a7f3e7004f77fd94f1,Carla Dama,63af12a7f3e7004f77fd94f1,10/feb/26 12:24 PM,18/feb/26 10:19 AM,,18/feb/26 9:46 AM,,0,,,Tkt summa: [https://infracommerce.atlassian.net/browse/TFM-633|https://infracommerce.atlassian.net/browse/TFM-633|smart-link] ,,Carla Dama,,,63af12a7f3e7004f77fd94f1,,,,,,,,,,,,,TQD-569,TQD-570,TQD-571,TQD-572,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@b5ec915,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzwzzur,,,,,,Sprint 2,,,,,,,,,,,,,,10170_*:*_1_*:*_83652764_*|*_10169_*:*_1_*:*_162636901_*|*_10235_*:*_1_*:*_2541_*|*_10236_*:*_1_*:*_0,,,,,,,Listo,18/feb/26 9:46 AM
+QA-[Bug]-[Farma]-CTA “Guardar datos personales” no se habilita con género “No binario” / “Prefiero no decir”,TQD-732,32178,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,19/feb/26 11:49 AM,20/feb/26 10:07 AM,,19/feb/26 5:49 PM,,0,,,"*Ambiente:* Producción 
+*Módulo/flujo:* Checkout → Cart → Login/Registro TUF (drawer)
+*Tipo:* Funcional / Bloqueante parcial (impide completar alta TUF)
+
+-->*Descripción*
+
+Al registrarse como *usuario nuevo* desde el *cart* (sin sesión iniciada), el formulario de activación de beneficios *Tu Farmacity* muestra el selector de género con varias opciones.
+Si el usuario selecciona *“No binario”* o *“Prefiero no decir”*, el *CTA “Guardar datos personales” no se habilita*, aunque todos los campos requeridos estén completos y TyC aceptados. 
+
+
+
+h3. -->Pasos para reproducir
+
+# Ingresar al sitio-> [https://www.farmacity.com/|https://www.farmacity.com/|smart-link]  *sin estar logueado*.
+# Agregar uno o más productos al carrito.
+# Regionalizar en *Retiro* o envio 
+# Ir al *minicart* → *Confirmar* → redirige a *checkout/cart*.
+# Se abre drawer de *login/registro TUF* desde el cart.
+# Completar datos personales requeridos (Nombre, Apellido, Documento, Fecha Nac.) y *tildar TyC*.
+# En “¿Con qué género te identificás?” seleccionar:
+#* a) *No binario* ó
+#* b) *Prefiero no decir*
+# Observar estado del botón *“Guardar datos personales”*.
+
+
+
+h3. Resultado actual
+
+* Con *“No binario”* y *“Prefiero no decir”* el CTA queda *deshabilitado*
+
+
+h3. Resultado esperado
+
+* Al seleccionar *cualquier opción válida* del dropdown (incluyendo “No binario” y “Prefiero no decir”), y con campos completos + TyC aceptados, el CTA debería *habilitarse* y permitir continuar.
+
+
+Evidencia :  
+
+
+
+!image-20260219-144611.png|width=671,alt=""image-20260219-144611.png""!
+
+
+
+
+!image-20260219-144652.png|width=671,alt=""image-20260219-144652.png""!",,Alixandry Acosta,,,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,,,,,,,,,,,,,,,,,19/feb/26 11:49 AM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20260219-144611.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/24472,19/feb/26 11:49 AM;6040bec0-e7cb-45e1-adef-35075e2dda30;image-20260219-144652.png;https://famacityar.atlassian.net/rest/api/3/attachment/content/24473,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@175bdab9,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,XXS,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5e,,,,,,Sprint 2,,,,,,,,,,,,,,10174_*:*_1_*:*_3867_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_10006718_*|*_10236_*:*_1_*:*_497588,,"19/feb/26 5:48 PM;712020:72a883cb-daae-455f-8fa3-e84f57418ab6;(/) Validado en producción : 
+
+*Género: “No binario”*
+-Usuario nuevo (sin sesión iniciada).
+-Datos personales completos + TyC aceptados.
+-El CTA *“Guardar datos personales” se habilita correctamente*.
+-Permite continuar el flujo sin bloqueos.
+
+* *Género: “Prefiero no decir”*
+-Datos completos + TyC aceptados.
+-El CTA *se habilita correctamente*.
+-El usuario puede avanzar sin inconvenientes.
+* *Flujo completo*
+->Luego de guardar datos personales, el usuario:
+-Visualiza mensaje de cuenta creada con éxito.
+-Continúa el proceso de compra.
+-Accede correctamente al *paso 3 – Pago* del checkout.
+* *Regresión*
+-Las opciones de género de una sola palabra continúan funcionando correctamente.
+-No se detectan bloqueos ni errores adicionales.
+* *Validación visual*
+-Se verifica el *ajuste de color de texto en los inputs*.
+-La visualización es correcta y consistente. 
+",,,,,Listo,19/feb/26 5:49 PM
+QA - Ambiente QA - [GTL] | La funcionalidad color picker y regalo por compra son incompatibles en minicart desktop.,TQD-654,30157,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,13/ene/26 12:50 PM,30/mar/26 12:18 AM,02/mar/26 5:32 PM,27/mar/26 2:15 PM,,0,,,"Ticket Summa: [https://infracommerce.atlassian.net/browse/GTL-1231|https://infracommerce.atlassian.net/browse/GTL-1231|smart-link] 
+📄 *Descripción del Bug*
+Al seleccionar productos que incluyen un producto de regalo por la compra, el componente color picker se muestra con intermitencias. Impidiendo modificaciones en el color del producto.
+
+🧪 *Paso a Paso para Reproducir:*
+
+#  Ingresar al producto [+https://getthelookardev.myvtex.com/lapiz-labial-the-only-one-matte-810-x-3-6-gr/p?skuId=224194+|https://getthelookardev.myvtex.com/lapiz-labial-the-only-one-matte-810-x-3-6-gr/p?skuId=224194]
+#  Agregar al carrito
+#  Desplegar minicart
+
+✅ *Resultado Esperado:*
+Se espera visualizar el componente de color picker sin intermitencias.
+
+❌ *Resultado Observado:*
+
+Hay incompatibilidad entre los componentes mencionados.
+
+📁 *Evidencia:*
+
+
+!GTL - Bug vinculado entre componente color picker y regalo por compra.mp4|width=671,alt=""GTL - Bug vinculado entre componente color picker y regalo por compra.mp4""!",,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,,,7200,7200,,0 %,7200,7200,,,,,,,13/ene/26 12:50 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;GTL - Bug vinculado entre componente color picker y regalo por compra.mp4;https://famacityar.atlassian.net/rest/api/3/attachment/content/23115,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@43a4b7c8,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,GetTheLook,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fu6,,,,,,Sprint 2,Sprint 3,,,,,,,,,,,,,10170_*:*_2_*:*_5977_*|*_10169_*:*_2_*:*_588964000_*|*_10235_*:*_2_*:*_3468948357_*|*_10236_*:*_2_*:*_1297615230,,,,,,,Listo,27/mar/26 2:15 PM
+QA - [BUG] - [FARMA] | Card con tamaño incosistente en carrusel de productos en PDP,TQD-661,30295,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,15/ene/26 10:40 AM,10/feb/26 10:07 AM,,10/feb/26 9:02 AM,,0,,,[https://infracommerce.atlassian.net/browse/FARMA-4800|https://infracommerce.atlassian.net/browse/FARMA-4800|smart-link] ,,Fernanda,,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@41252d31,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzwzi,,,,,,Sprint 2,,,,,,,,,,,,,,10170_*:*_1_*:*_8882_*|*_10173_*:*_1_*:*_618751331_*|*_10169_*:*_1_*:*_1550498287_*|*_10235_*:*_1_*:*_2639_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_2387,,28/ene/26 8:42 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validaron los ajustes realizados en [+https://farma4800--farmacityar.myvtex.com+|https://farma4800--farmacityar.myvtex.com/emulsion-corporal-hidratante-bagovit-efecto-luminoso-x-200-ml/p],09/feb/26 1:40 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/)  Se validó OK en preprod [+https://preprod--farmacityar.myvtex.com/+|https://preprod--farmacityar.myvtex.com/],,,,Listo,10/feb/26 9:02 AM
+QA -[Improvement] - [SIMPLI] Ajuste de visibilidad de banners PLP en mobile y desktop,TQD-729,32045,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,13/feb/26 8:50 AM,25/feb/26 4:29 PM,,25/feb/26 4:29 PM,,0,,,[https://infracommerce.atlassian.net/browse/SIMPLI-627|https://infracommerce.atlassian.net/browse/SIMPLI-627|smart-link] ,,Fernanda,,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@adc7588,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5h,,,,,,Sprint 2,,,,,,,,,,,,,,10170_*:*_1_*:*_10898_*|*_10173_*:*_1_*:*_944224679_*|*_10169_*:*_1_*:*_24546113_*|*_10235_*:*_1_*:*_3191_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_10517,,13/feb/26 3:40 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validan OK los ajustes realizados.,25/feb/26 9:33 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validó OK en preprod [+https://preprod--simplicityar.myvtex.com/+|https://preprod--simplicityar.myvtex.com/] (maybelline),,,,Listo,25/feb/26 4:29 PM
+QA - [BUG] - [FARMA] | Disposición de los bloques en landing modular.,TQD-730,32112,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,18/feb/26 9:45 AM,19/feb/26 10:50 AM,,18/feb/26 5:34 PM,,0,,,[https://infracommerce.atlassian.net/browse/FARMA-4822|https://infracommerce.atlassian.net/browse/FARMA-4822|smart-link] ,,Gonzalo Martin Estevez,,,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,,,,,,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7e6e286d,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5bveukhwzzzzzwzzx,,,,,,Sprint 2,,,,,,,,,,,,,,10170_*:*_1_*:*_6330_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_12296_*|*_10235_*:*_1_*:*_2856_*|*_10236_*:*_1_*:*_3827,,,,,,,Listo,18/feb/26 5:34 PM
+QA - [BUG] - [SIMPLI] | Checkout se cuelga al avanzar.,TQD-749,32766,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,Gonzalo Martin Estevez,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,02/mar/26 9:33 AM,04/mar/26 10:14 AM,04/mar/26 10:13 AM,02/mar/26 2:50 PM,,0,checkout,,[https://infracommerce.atlassian.net/browse/SIMPLI-631|https://infracommerce.atlassian.net/browse/SIMPLI-631|smart-link] ,,Gonzalo Martin Estevez,,,712020:78941a89-f7b5-4ea3-98e0-66d0c42ce213,,,;04/mar/26 10:14 AM;7d501043-f27b-4edc-816a-02fa12a0b570;7200,,19800,0,7200,36 %,19800,0,7200,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7836db5,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh5jzr,,,,,,Sprint 2,Sprint 3,,,,,,,,,,,,,10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_124885_*|*_10235_*:*_1_*:*_3111_*|*_10236_*:*_1_*:*_4517,,,,,,,Listo,02/mar/26 2:50 PM
+QA - [TFM] | Contador no se despliega ni sigue el scroll,TQD-781,33396,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Felipe Stanic,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,Felipe Stanic,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,Felipe Stanic,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,09/mar/26 4:54 PM,10/mar/26 2:57 PM,,10/mar/26 2:57 PM,,0,,,[https://infracommerce.atlassian.net/browse/TFM-651|https://infracommerce.atlassian.net/browse/TFM-651|smart-link] ,,Felipe Stanic,,,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,,,;10/mar/26 2:57 PM;02cadf0c-d3fe-40ea-b990-be5d9291f9af;19800,,19800,0,19800,100 %,19800,0,19800,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5ea4135b,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh6,,,,,,Sprint 3,,,,,,,,,,,,,,10173_*:*_1_*:*_4099_*|*_10169_*:*_1_*:*_6446_*|*_10235_*:*_1_*:*_2285_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_79338958,,,,,,,Listo,10/mar/26 2:57 PM
+QA - BUG - Producción - [Farmacity] El stock no se actualiza autómaticamente al iniciar sesión.,TQD-808,33889,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,17/mar/26 5:06 PM,30/mar/26 10:19 AM,,30/mar/26 10:19 AM,,0,Farmacity,,"Ticket Summa: [https://infracommerce.atlassian.net/browse/FARMA-4879|https://infracommerce.atlassian.net/browse/FARMA-4879|smart-link] 
+📄 *Descripción del Bug:*
+Al iniciar sesión permite agregar al carrito productos que no tienen stock, o se muestra el modal para regionalizarse nuevamente.
+
+🧪 *Paso a Paso para Reproducir:*
+
+#  Ingresar a [https://www.farmacity.com/|https://www.farmacity.com/|smart-link] y hacer login con una cuenta que ya tenga una ultima regionalización guardada.
+#  Agregar producto al carrito con la última regionalización que trae por defecto.
+
+✅ *Resultado Esperado:*
+Al iniciar sesión se debe actualizar de forma automática el stock disponible, con la última regionalización guardada por el usuario. Sin necesidad de volver a regionalizar, ni agregar productos que no están disponibles.
+❌ *Resultado Observado:*
+*Escenario 1:*
+Permite agregar productos que no estan disponibles.
+*Escenario 2:* 
+Muestra modal de nueva regionalización.
+📁 *Evidencia:*
+Escenario 1:
+
+! FARMA - Escenario 1.mp4|width=671,alt="" FARMA - Escenario 1.mp4""!
+
+Escenario 2:
+
+!Add to card - FARMA (Escenario 2).mp4|width=671,alt=""Add to card - FARMA (Escenario 2).mp4""!",,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,;17/mar/26 5:07 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;1800,,7200,5400,1800,25 %,7200,5400,1800,,,,,,17/mar/26 5:06 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09; FARMA - Escenario 1.mp4;https://famacityar.atlassian.net/rest/api/3/attachment/content/25610,17/mar/26 5:06 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;Add to card - FARMA (Escenario 2).mp4;https://famacityar.atlassian.net/rest/api/3/attachment/content/25609,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@56ad2adb,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fuf,,,,,,Sprint 3,,,,,,,,,,,,,,10170_*:*_1_*:*_9808111_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_55689851_*|*_10235_*:*_1_*:*_2871_*|*_10236_*:*_1_*:*_3671,,,,,,,Listo,30/mar/26 10:19 AM
+QA - [BUG] - TFM - Incidente en deplegables del paso 2 en checkout,TQD-820,34411,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,26/mar/26 4:14 PM,30/mar/26 12:18 AM,,27/mar/26 11:37 AM,,0,,,"[https://infracommerce.atlassian.net/browse/TFM-664|https://infracommerce.atlassian.net/browse/TFM-664|smart-link] 
+
+📄 *Descripción del Bug:*
+No se puede avanzar a paso 3, ya que el desplegable en el tipo de envío no funciona.
+
+🧪 *Paso a Paso para Reproducir:*
+
+#  Hacer login en [https://www.thefoodmarket.com.ar/|https://www.thefoodmarket.com.ar/|smart-link]  prod
+#  agregar productos al carrito
+#  Avanzar a checkout seleccionando envío programado y express 
+
+✅ *Resultado Esperado:*
+Se espera poder avanzar exitosamente a checkout paso 3
+
+❌ *Resultado Observado:*
+No se despliega la opción para seleccionar el día y el horario del envío programado.
+
+📁 *Evidencia:*
+
+
+!Video_20260326_155637_238_1.mp4|width=588,alt=""Video_20260326_155637_238_1.mp4""!
+
+!Video_20260326_160051_708_1.mp4|width=588,alt=""Video_20260326_160051_708_1.mp4""!",,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,;26/mar/26 4:21 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;3600,;27/mar/26 11:38 AM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;7200,39600,0,10800,27 %,39600,0,10800,,,,,,26/mar/26 4:14 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;Video_20260326_155637_238_1.mp4;https://famacityar.atlassian.net/rest/api/3/attachment/content/25952,26/mar/26 4:14 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;Video_20260326_160051_708_1.mp4;https://famacityar.atlassian.net/rest/api/3/attachment/content/25951,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2c5b82cb,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,S,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fu7,,,,,,Sprint 3,,,,,,,,,,,,,,10170_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_134901,,,,,,,Listo,27/mar/26 11:37 AM
+QA - [BUG] - TFM - Imposibilidad para iniciar sesión,TQD-821,34453,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Highest,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,27/mar/26 12:31 PM,06/abr/26 5:01 PM,,31/mar/26 3:37 PM,,0,,,[https://infracommerce.atlassian.net/browse/TFM-665|https://infracommerce.atlassian.net/browse/TFM-665|smart-link] ,,Stefany S. Rodriguez,,,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,,;27/mar/26 2:15 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;3600,,19800,0,3600,18 %,19800,0,3600,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@cea18ee,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugqzi,,,,,,Sprint 3,Sprint 4,,,,,,,,,,,,,10170_*:*_1_*:*_246893859_*|*_10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_33067_*|*_10235_*:*_1_*:*_4423_*|*_10236_*:*_1_*:*_8552,,,,,,,Listo,31/mar/26 3:37 PM
+QA - [Farma] | Landing de registro TUF no muestra formulario,TQD-797,33492,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,11/mar/26 12:38 PM,26/mar/26 11:46 AM,,18/mar/26 4:00 PM,,0,,,"[https://infracommerce.atlassian.net/browse/FARMA-4869|https://infracommerce.atlassian.net/browse/FARMA-4869|smart-link]  
+
+
+
+
+
+",,Alixandry Acosta,,,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,,,;17/mar/26 2:36 PM;6040bec0-e7cb-45e1-adef-35075e2dda30;7200,,39600,0,7200,18 %,39600,0,7200,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3729a223,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,S,,S,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fsux,,,,,,Sprint 3,,,,,,,,,,,,,,10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_523840453_*|*_10235_*:*_1_*:*_1582180_*|*_10236_*:*_1_*:*_4854,,17/mar/26 2:36 PM;712020:72a883cb-daae-455f-8fa3-e84f57418ab6;(/) validado en prepro: [https://farma4869--farmacityar.myvtex.com/registrate-en-tu-farmacity|https://farma4869--farmacityar.myvtex.com/registrate-en-tu-farmacity],18/mar/26 4:00 PM;712020:72a883cb-daae-455f-8fa3-e84f57418ab6;(/) se valido en produccion: [https://www.farmacity.com/registrate-en-tu-farmacity|https://www.farmacity.com/registrate-en-tu-farmacity|smart-link] ,,,,Listo,18/mar/26 4:00 PM
+QA [BUG] - [GTL] | PROD - No funciona la regionalización correctamente,TQD-799,33495,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Carla Dama,63af12a7f3e7004f77fd94f1,Carla Dama,63af12a7f3e7004f77fd94f1,Carla Dama,63af12a7f3e7004f77fd94f1,11/mar/26 1:20 PM,13/mar/26 9:17 AM,,12/mar/26 11:54 AM,,0,,,Tkt summa: [https://infracommerce.atlassian.net/browse/GTL-1287|https://infracommerce.atlassian.net/browse/GTL-1287|smart-link] ,,Carla Dama,,,63af12a7f3e7004f77fd94f1,,,,,19800,0,,0 %,19800,0,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1259631f,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,GetTheLook,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fn,,,,,,Sprint 3,,,,,,,,,,,,,,10173_*:*_1_*:*_3739_*|*_10169_*:*_1_*:*_13271496_*|*_10235_*:*_1_*:*_4099_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_3514,,,,,,,Listo,12/mar/26 11:54 AM
+QA - TFM [BUG] Título landing ofertas queda por encima del header,TQD-805,33822,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Stefany S. Rodriguez,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,Giselle De Freitas,628663d556b8470069787fdc,Giselle De Freitas,628663d556b8470069787fdc,17/mar/26 11:20 AM,06/abr/26 5:01 PM,,06/abr/26 3:55 PM,,0,,,[https://infracommerce.atlassian.net/browse/TFM-644|https://infracommerce.atlassian.net/browse/TFM-644|smart-link] ,,Giselle De Freitas,Stefany S. Rodriguez,,628663d556b8470069787fdc,712020:93f1827c-37ae-4781-b5bc-19969b5ac49e,,Pruebas reiteradas en ambientes incorrectos y desestimación con pruebas en prod.;06/abr/26 3:56 PM;58ae4dc0-e460-4974-bc06-eed1b0cc2a09;3600,,19800,10800,3600,18 %,19800,10800,3600,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5ff392cf,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugqzy,,,,,,Sprint 3,Sprint 4,,,,,,,,,,,,2026-04-06 18:48:28.731,10174_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_10180_*|*_10235_*:*_1_*:*_88365348_*|*_10236_*:*_1_*:*_1649219222,,06/abr/26 3:48 PM;712020:93f1827c-37ae-4781-b5bc-19969b5ac49e;06-04-2026 Lo vimos con [~accountid:628663d556b8470069787fdc] y se dejó en pausa ya que en producción ya no se visualiza el issue. (Evidencias en el tkt de Summa),,,,,Listo,06/abr/26 3:55 PM
+"QA - [FARMA] | No carga la categoría ""Galletitas y Tostadas"" (pantalla en blanco)",TQD-823,34636,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,High,Listo,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,Alixandry Acosta,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,30/mar/26 4:30 PM,08/abr/26 10:07 AM,,01/abr/26 5:46 PM,,0,,,"[https://infracommerce.atlassian.net/jira/software/c/projects/FARMA/boards/240?selectedIssue=FARMA-4890|https://infracommerce.atlassian.net/jira/software/c/projects/FARMA/boards/240?selectedIssue=FARMA-4890|smart-link] 
+
+[https://teayudo.farmacity.com.ar/requests/show/index/id/3041154|https://teayudo.farmacity.com.ar/requests/show/index/id/3041154]",,Alixandry Acosta,,,712020:72a883cb-daae-455f-8fa3-e84f57418ab6,,,,,7200,0,,0 %,7200,0,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@718161aa,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugqzz,,,,,,Sprint 3,Sprint 4,,,,,,,,,,,,,10171_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_177351501,,,,,,,Listo,01/abr/26 5:46 PM
+"QA -  [FARMA] Filtro de Promociones 2x1, no devuelve resultados en PLP",TQD-774,32980,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,03/mar/26 4:30 PM,10/mar/26 10:40 AM,,10/mar/26 9:01 AM,,0,,,[https://infracommerce.atlassian.net/browse/FARMA-4852|https://infracommerce.atlassian.net/browse/FARMA-4852|smart-link]  ,,Fernanda,,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,;04/mar/26 3:31 PM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;7200,,7200,0,7200,100 %,7200,0,7200,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@286dc0c4,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fii,,,,,,Sprint 3,,,,,,,,,,,,,,10173_*:*_1_*:*_0_*|*_10169_*:*_1_*:*_65552551_*|*_10235_*:*_1_*:*_8832_*|*_10236_*:*_1_*:*_17154568,,04/mar/26 3:28 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validaron OK los ajustes en [https://farma4852--farmacityar.myvtex.com/shampoo?_q=shampoo&map=ft|https://farma4852--farmacityar.myvtex.com/shampoo?_q=shampoo&map=ft],09/mar/26 12:12 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891; (/)  Validado OK en preprod: [+https://preprod--farmacityar.myvtex.com/+|https://preprod--farmacityar.myvtex.com/],,,,Listo,10/mar/26 9:01 AM
+QA - [SIMPLI] El filtro Promociones no se muestra en listado de filtros de las PLPs.,TQD-776,33282,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,06/mar/26 4:17 PM,10/abr/26 10:10 AM,,08/abr/26 10:14 AM,,0,,,[https://infracommerce.atlassian.net/browse/SIMPLI-639|https://infracommerce.atlassian.net/browse/SIMPLI-639|smart-link] ,,Fernanda,,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,,,19800,0,,0 %,19800,0,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4e4302d6,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,Simplicity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugur,,,,,,Sprint 3,Sprint 4,,,,,,,,,,,,,10169_*:*_1_*:*_337131907_*|*_10235_*:*_1_*:*_2319184989_*|*_10236_*:*_1_*:*_0,,"06/abr/26 11:11 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;Se realizaron pruebas en [https://simpli639--simplicityar.myvtex.com/|https://simpli639--simplicityar.myvtex.com/]
+Se evidencia demora en carga de filtro en PLP.
+A la espera de comentarios.",08/abr/26 9:40 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;Este ticket queda resuelto por el desarrollo en el ticket [https://infracommerce.atlassian.net/browse/SIMPLI-612|https://infracommerce.atlassian.net/browse/SIMPLI-612|smart-link],,,,Listo,08/abr/26 10:14 AM
+QA - [TFM] |  PLP | Mobile- Error en la ubicación de los filtros sticky,TQD-782,33397,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Felipe Stanic,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,Felipe Stanic,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,Felipe Stanic,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,09/mar/26 4:55 PM,10/mar/26 2:58 PM,,10/mar/26 2:57 PM,,0,,,[https://infracommerce.atlassian.net/browse/TFM-650|https://infracommerce.atlassian.net/browse/TFM-650|smart-link] ,,Felipe Stanic,,,712020:a8c0ebdb-86fe-45ad-9108-adff97179356,,,;10/mar/26 2:58 PM;02cadf0c-d3fe-40ea-b990-be5d9291f9af;18000,,19800,0,18000,90 %,19800,0,18000,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@59468599,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XS,,,TheFoodMarket,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh6i,,,,,,Sprint 3,,,,,,,,,,,,,,10173_*:*_1_*:*_3954_*|*_10169_*:*_1_*:*_79289623_*|*_10235_*:*_1_*:*_3750_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_3859,,,,,,,Listo,10/mar/26 2:57 PM
+"QA - [FARMA] Se muestra nombre de colección en el breadcrumb, al filtrar una promoción",TQD-794,33486,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,11/mar/26 12:23 PM,07/abr/26 9:55 AM,,07/abr/26 9:55 AM,,0,,,[https://infracommerce.atlassian.net/browse/FARMA-4866|https://infracommerce.atlassian.net/browse/FARMA-4866|smart-link] ,,Fernanda,,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,;12/mar/26 4:48 PM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;19800,;06/abr/26 2:49 PM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;5400,7200,0,25200,350 %,7200,0,25200,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4e1128f6,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,Farmacity,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugt,,,,,,Sprint 3,Sprint 4,,,,,,,,,,,,,10173_*:*_1_*:*_1827326068_*|*_10169_*:*_1_*:*_97562750_*|*_10235_*:*_1_*:*_4591_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_324215166,,16/mar/26 9:32 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validó OK en [https://farma4866--farmacityar.myvtex.com/|https://farma4866--farmacityar.myvtex.com/] ,06/abr/26 2:49 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) OK en preprod: [https://preprod--farmacityar.myvtex.com/|https://preprod--farmacityar.myvtex.com/] ,,,,Listo,07/abr/26 9:55 AM
+QA - [GTL] Inestabilidad visual del carrito al salir del checkout,TQD-815,34160,Error,Finalizada,TQD,Team QAs + Devs,software,Juan Manuel Mombiela,60f02a632f97d50069064440,,Medium,Listo,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,Fernanda,712020:845db8bb-638a-4961-9c6f-31f04dcad891,25/mar/26 8:13 AM,06/abr/26 5:01 PM,,01/abr/26 10:09 AM,,0,,,[https://infracommerce.atlassian.net/browse/GTL-1240|https://infracommerce.atlassian.net/browse/GTL-1240|smart-link] ,,Fernanda,,,712020:845db8bb-638a-4961-9c6f-31f04dcad891,,,;25/mar/26 10:23 AM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;3600,;31/mar/26 3:04 PM;ug:0ddcdcf0-d9cf-4cda-9ffc-9f16025802d4;2100,7200,0,5700,79 %,7200,0,5700,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7a7d95c4,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,XXS,,,GetTheLook,,,,,,,,,,,,,,,,0|i00yzg:1gzzxzxvhshxmh7fugp,,,,,,Sprint 3,Sprint 4,,,,,,,,,,,,,10170_*:*_1_*:*_5586_*|*_10173_*:*_1_*:*_535237074_*|*_10169_*:*_1_*:*_2570368_*|*_10235_*:*_1_*:*_4102_*|*_10367_*:*_1_*:*_0_*|*_10236_*:*_1_*:*_5232187,,25/mar/26 10:23 AM;712020:845db8bb-638a-4961-9c6f-31f04dcad891;(/) Se validó OK en [+https://getthelookardev.myvtex.com/+|https://getthelookardev.myvtex.com/],31/mar/26 2:15 PM;712020:845db8bb-638a-4961-9c6f-31f04dcad891; (/) Ok en preprod: [https://preprod--getthelookar.myvtex.com/nueva-home-2026|https://preprod--getthelookar.myvtex.com/nueva-home-2026],,,,Listo,01/abr/26 10:09 AM

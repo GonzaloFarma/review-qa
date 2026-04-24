@@ -2,136 +2,172 @@
 
 ## Project Structure & Source of Truth
 
-This repository is the working space for QA review slides presented to business stakeholders in Farmacity Group. The active source of truth is `docs/contexto/qa_review_context.md`. Any session-level clarification, decision, or scope change that becomes stable should be folded back into this `AGENTS.md`.
+This repository is the working space for QA review slides presented to business stakeholders in Farmacity Group.
 
-Current key assets:
+Primary source of truth:
 
-- `slider-01.html` and `slider-02.html` are deprecated artifacts from a previous initiative, but they must be reused as the structural base for the new slides.
-- `docs/jira-cvs/Jira (Q1).csv` is the main operational dataset for Q1.
-- `docs/jira-cvs/Capacity (sprint 3).csv` is a complementary dataset and currently only covers part of the capacity story.
-- `docs/ejemplos-html/` contains reusable visual references and layout fragments.
-- `docs/notas.txt` captures the unstructured brief that kicked off this phase.
+- `docs/contexto/qa_review_context.md`
+
+Operational maintenance guide:
+
+- `docs/contexto/slide_maintenance_system.md`
+
+Current production artifacts:
+
+- `slider-01.html` for delivery, improvements, and innovation
+- `slider-02.html` for risk and bugs
+- `slider-03.html` for TeAyudo ticketing
+
+Reference artifact:
+
+- `slider-q1.html` remains only as the source layout used to split the original unified slide into `slider-01` and `slider-02`
+
+Main data assets:
+
+- `docs/jira-cvs/Jira (Q1).csv`
+- `docs/jira-cvs/Jira-mejoras (Q1).csv`
+- `docs/jira-cvs/Jira-error (Q1).csv`
+- `docs/contexto/q1_metrics_baseline.md`
+- `docs/contexto/teayudo_ticketera_q1.json`
+- `docs/story/q1-data-team.md`
+- `docs/capturas/slider-03.png`
 
 Keep final presentation artifacts at the repo root unless a future restructuring is intentional and documented.
 
 ## Current Project Context
 
-The purpose of this repository is not to build generic QA dashboards. It is to help Gonzalo Estevez present the QA team with more executive clarity, stronger business framing, and better stakeholder perception during quarterly reviews.
+The purpose of this repository is not to build generic QA dashboards. It is to help Gonzalo Estevez present the QA team with executive clarity, stronger business framing, and better stakeholder perception during quarterly reviews.
 
-Constraints that define the work:
+Current working model:
 
-- Review format: 2 slides, 5 to 10 minutes of oral storytelling.
-- Audience: owners, sponsors, and stakeholders who do not need Jira-level technical detail.
-- Tone: business-facing, concise, visual, and easy to process quickly.
-- Goal: show QA as a function that protects releases, reduces operational risk, and improves delivery confidence.
+- `3` horizontal slides
+- `5` to `10` minutes of oral storytelling across the sequence
+- business-facing, concise, visual copy
+- minimal Jira-native wording in visible UI
 
-Current initial narrative under evaluation:
+Current narrative split:
 
-- Slide 1: Q1 team performance, completion by sprint, work mix by format and cross-team activity, bug share vs implementation QA vs internal work.
-- Slide 2: Q1 bug management, bug volume by sprint, avoided bugs and rework caught before production, and bug severity split.
+- `slider-01.html`: delivery, improvements, and innovation
+- `slider-02.html`: risk, bugs, and priority
+- `slider-03.html`: ticketing behavior in TeAyudo
 
-These two slides should evolve together as one story, not as isolated charts.
+Current direction:
 
-## Data Caveats Learned In Session
+- simplify as much as possible without losing executive meaning
+- prefer stable layout and easy data refresh over new visual exploration
+- when something feels dense, simplify copy or numbers before changing structure
 
-- The main Jira export uses 10 duplicated `Sprint` columns. Q1 analysis must read them together.
-- `Campo personalizado (Criticidad)` is empty across the current Q1 export.
-- Until that improves, severity-based storytelling should use `Prioridad` as a proxy and state that assumption explicitly.
-- The CSV does not cleanly separate internal QA work from implementation support work.
-- Any metric framed as `bugs evitados` is an inference unless a stricter source field is introduced.
+## Data Caveats
+
+- The main Jira export uses `10` duplicated `Sprint` columns. Q1 analysis must read them together.
+- `Campo personalizado (Criticidad)` is empty in the current Q1 export.
+- Severity storytelling should use `Prioridad` as a proxy until a better source exists.
+- `Tiempo Trabajado` is incomplete, so any hour metric must be labeled as `horas registradas en Jira`.
+- A ticket belongs to the Q1 cut if it appears in any Q1 sprint column, even if it closes later.
+- `Capacity (Q1).csv` is exploratory only and should not be treated as executive truth.
+- `slider-03` currently uses manually transcribed data from `docs/capturas/slider-03.png`, normalized in `docs/contexto/teayudo_ticketera_q1.json`.
 
 ## Working Canvas & Visual Direction
 
 - Active canvas: `1440x840`
-- Background: white, aligned to the shared Canva system
-- Copy language: Spanish, written for business stakeholders
-- Avoid Jira IDs and tool-native wording in the UI
-- Prefer compact executive blocks over dense tables
+- Main visual reference available in repo: `docs/ejemplos/slider-equipo/`
+- Shared palette base:
+  - `#211274`
+  - `#5ba698`
+  - `#d7d8d8`
+  - `#ff3131`
+  - `#00dd88`
+  - `#49a5ef`
+  - `#ffd359`
+  - `#ffffff`
+- Shared typography: `Montserrat`
+- Background direction: white base with subtle executive treatment, no heavy dashboards
 
-When reworking `slider-01.html` and `slider-02.html`, preserve what is reusable and replace what is tied to the old project.
+Stable UI principles:
 
-## Workflow by Phases
+- keep the current slide architecture
+- keep block hierarchy stable
+- keep titles and main panels in place unless a redesign is explicitly requested
+- prefer compact executive cards over dense tables
+- prefer updating data and short copy instead of redesigning components
 
-Work in deliberate phases instead of trying to solve the whole presentation at once.
+## Workflow
 
-Phase 1:
+Use this order by default:
 
-- Organize repository setup and versioning
-- Normalize README and AGENTS context
-- Align narrative, data sources, and slide methodology
-
-Phase 2 onward:
-
-- Define business storyline for each slide
-- Extract and validate the metrics that really support that storyline
-- Rebuild slide layouts in HTML/CSS
-- Validate locally with Playwright CLI
-- Refine copy and stakeholder framing
+1. Validate which slide is affected
+2. Confirm numbers and short labels from the corresponding source
+3. Update the slide HTML
+4. Run manual visual validation
+5. Fold stable changes back into docs
 
 ## Build, Test, and Development Commands
 
 There is no build pipeline. Work directly on the HTML artifacts and validate them locally.
 
 - `rg --files` lists the workspace files
-- `cat docs/contexto/qa_review_context.md` reviews the active context
-- `npm run pw:chrome` opens Playwright CLI in Chrome for layout validation
+- `cat docs/contexto/qa_review_context.md` reviews the active project context
+- `cat docs/contexto/slide_maintenance_system.md` reviews the maintenance rules
+- `python3 -m http.server 4173 --bind 0.0.0.0` serves the repo locally
+- `npx playwright screenshot --device='Desktop Chrome HiDPI' --viewport-size=1440,840 http://127.0.0.1:4173/slider-01.html /tmp/slider-01.png`
+- `npx playwright screenshot --device='Desktop Chrome HiDPI' --viewport-size=1440,840 http://127.0.0.1:4173/slider-02.html /tmp/slider-02.png`
+- `npx playwright screenshot --device='Desktop Chrome HiDPI' --viewport-size=1440,840 http://127.0.0.1:4173/slider-03.html /tmp/slider-03.png`
 - `git status --short` checks the current versioned scope
-
-If tooling grows later, document the exact command here and keep it lean.
 
 ## Coding Style & Naming Conventions
 
 Follow the existing static HTML/CSS conventions:
 
-- Use 2-space indentation in HTML and CSS
-- Prefer semantic sectioning and readable markup blocks
-- Keep CSS tokens in `:root`
-- Use lowercase kebab-case for classes and files
+- use 2-space indentation in HTML and CSS
+- prefer semantic sectioning and readable markup blocks
+- keep CSS tokens in `:root`
+- use lowercase kebab-case for classes and files
 
 Copy must stay stakeholder-facing:
 
-- Prefer concise Spanish wording
-- Translate technical work into impact, risk, confidence, throughput, prevention, and outcomes
-- Avoid exposing raw Jira taxonomy unless it is transformed into business meaning
+- concise Spanish wording
+- convert technical work into impact, risk, confidence, throughput, prevention, and outcomes
+- avoid raw Jira taxonomy in visible UI unless explicitly needed
 
-## Comportamiento específico para código
+## Specific Code Behavior
 
 Antes de escribir cualquier solución:
 
-- Si el requerimiento tiene una suposición falsa o incompleta, marcala antes de codear
-- Indicá siempre si la solución genera deuda técnica o no escala, aunque no te lo pida
-- Si hay dos enfoques válidos, mostralos con tradeoffs reales, no elijas por mí sin explicar
+- si el requerimiento tiene una suposición falsa o incompleta, marcala antes de codear
+- indicá si la solución genera deuda técnica o no escala, aunque no te lo pidan
+- si hay dos enfoques válidos, mostrálos con tradeoffs reales
 
-## Restricciones de output
+## Output Restrictions
 
-- Sin comentarios que expliquen lo obvio
-- Sin abstracciones prematuras
-- Sin cierres motivacionales
-- Si el requerimiento es ambiguo, preguntá lo mínimo necesario antes de proceder
+- sin comentarios que expliquen lo obvio
+- sin abstracciones prematuras
+- sin cierres motivacionales
+- si el requerimiento es ambiguo, preguntá lo mínimo necesario antes de proceder
 
 ## Testing Guidelines
 
 There is no automated test suite yet. Validate changes manually before delivery:
 
-- Open `slider-01.html` and `slider-02.html` in a desktop browser
-- Use Playwright CLI in Chrome when layout or spacing changes
-- Confirm the slide fits the `1440x840` canvas without overflow or clipped sections
-- Check typography, spacing, visual hierarchy, and contrast
-- Verify any metric or statement against `docs/contexto/qa_review_context.md` and the CSV sources in `docs/jira-cvs/`
-
-When creating new variants, name them clearly and keep deprecated files only while they still serve as a reusable base.
+- open the affected slide in a desktop browser
+- serve the repo through local HTTP before using Playwright
+- confirm the slide fits `1440x840` without overflow or clipping
+- check typography, spacing, visual hierarchy, and contrast
+- verify numbers against the corresponding context/story/data source
+- if `slider-q1.html` is edited for reference reasons, validate it separately
 
 ## Commit & Pull Request Guidelines
 
-The repository already exists on GitHub at `GonzaloFarma/review-qa`. Use short imperative commit messages such as:
+The repository already exists on GitHub at `GonzaloFarma/review-qa`.
 
-- `Add repository baseline docs`
-- `Rewrite AGENTS for Q1 QA review context`
-- `Refactor slide 01 executive layout`
+Use short imperative commit messages such as:
+
+- `Update slide 01 metrics`
+- `Refine slide 02 bug story`
+- `Refresh slide 03 ticketing data`
 
 For pull requests, include:
 
-- A short summary of the narrative or visual change
-- The data source updated or introduced
-- A screenshot when the layout changes
-- Any open issue around copy, branding, or data interpretation
+- a short summary of the narrative or visual change
+- the data source updated or introduced
+- a screenshot when the layout changes
+- any open issue around copy, branding, or data interpretation

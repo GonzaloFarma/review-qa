@@ -4,6 +4,7 @@ import csv
 import re
 from collections import Counter
 from datetime import datetime
+from statistics import median
 
 
 CSV_PATH = "docs/jira-cvs/Jira (Q1).csv"
@@ -90,20 +91,47 @@ def format_counter(counter):
     return ", ".join(f"{key}: {value}" for key, value in counter.items())
 
 
+def format_hours(total_seconds):
+    return round(total_seconds / 3600, 1)
+
+
 def main():
     records = load_records()
     q1_records = [record for record in records if record["q1_sprints"]]
+    improvements = [record for record in q1_records if record["type"] == "Mejora"]
     bugs = [record for record in q1_records if record["type"] == "Error"]
     prod_bugs = [record for record in bugs if PROD_RE.search(record["summary"])]
     contained_bugs = [record for record in bugs if not PROD_RE.search(record["summary"])]
+    improvement_high = [
+        record for record in improvements if record["priority"] in {"High", "Highest"}
+    ]
+    improvement_logged = [
+        record for record in improvements if record["time_worked"] > 0
+    ]
+    bug_logged = [record for record in bugs if record["time_worked"] > 0]
 
     print("Q1 baseline")
     print(f"- Total incidencias Q1: {len(q1_records)}")
-    print(f"- Mejoras: {sum(r['type'] == 'Mejora' for r in q1_records)}")
+    print(f"- Mejoras: {len(improvements)}")
     print(f"- Bugs: {len(bugs)}")
     print(f"- Bugs con etiqueta de produccion en el resumen: {len(prod_bugs)}")
     print(f"- Bugs contenidos antes de produccion por inferencia de naming: {len(contained_bugs)}")
     print(f"- Incidencias con arrastre entre mas de un sprint Q1: {sum(len(r['q1_sprints']) > 1 for r in q1_records)}")
+    print()
+
+    print("KPIs delivery")
+    print(f"- Mejoras high + highest: {len(improvement_high)}")
+    print(
+        f"- Horas registradas en mejoras: {format_hours(sum(r['time_worked'] for r in improvement_logged))} "
+        f"(tickets con carga: {len(improvement_logged)})"
+    )
+    print(
+        "- Mejoras cerradas dentro del corte Q1: "
+        f"{sum(1 for r in improvements if r['resolved'] and any(start <= r['resolved'] <= end for start, end in Q1_WINDOWS.values()))}"
+    )
+    print(
+        f"- Mejoras con arrastre entre sprints Q1: {sum(len(r['q1_sprints']) > 1 for r in improvements)}"
+    )
     print()
 
     print("Carga por sprint")
@@ -121,6 +149,26 @@ def main():
         subset = [record for record in records if record["resolved"] and start <= record["resolved"] <= end]
         bug_count = sum(record["type"] == "Error" for record in subset)
         print(f"- {sprint}: cerradas={len(subset)} bugs={bug_count} mejoras={len(subset) - bug_count}")
+    print()
+
+    print("KPIs riesgo")
+    cycle_times = [
+        (record["resolved"] - record["created"]).total_seconds() / 86400
+        for record in bugs
+        if record["created"]
+        and record["resolved"]
+        and any(start <= record["resolved"] <= end for start, end in Q1_WINDOWS.values())
+    ]
+    print(
+        f"- Tiempo de resolucion mediano de bugs cerrados en Q1 (dias): {round(median(cycle_times), 1) if cycle_times else 'n/d'}"
+    )
+    print(
+        f"- Horas registradas en bugs: {format_hours(sum(r['time_worked'] for r in bug_logged))} "
+        f"(tickets con carga: {len(bug_logged)})"
+    )
+    print(
+        f"- Bugs high + highest: {sum(record['priority'] in {'High', 'Highest'} for record in bugs)}"
+    )
     print()
 
     print("Bugs por prioridad")

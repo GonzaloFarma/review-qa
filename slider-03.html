@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QA Q1 2026 · Slide 03</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --ink: #211274;
+        --ink-muted: rgba(33, 18, 116, 0.72);
+        --ink-soft: rgba(33, 18, 116, 0.48);
+        --mint: #5ba698;
+        --blue: #49a5ef;
+        --amber: #ffd359;
+        --danger: #ff3131;
+        --surface: #ffffff;
+        --surface-alt: #f6f6f8;
+        --surface-soft: #eef2f5;
+        --line-strong: rgba(33, 18, 116, 0.18);
+        --shadow: 0 18px 42px rgba(33, 18, 116, 0.08);
+        --display: "Montserrat", "Segoe UI", sans-serif;
+        --body: "Montserrat", "Segoe UI", sans-serif;
+        --accent: #49a5ef;
+        --accent-2: #5ba698;
+      }
+
+      html,
+      body {
+        margin: 0;
+        width: 1440px;
+        height: 840px;
+        overflow: hidden;
+        background: #ffffff;
+        color: var(--ink);
+        font-family: var(--body);
+      }
+
+      body {
+        position: relative;
+      }
+
+      .slide {
+        position: relative;
+        width: 1440px;
+        height: 840px;
+        padding: 24px 34px 22px;
+        overflow: hidden;
+      }
+
+      .slide::before,
+      .slide::after {
+        content: "";
+        position: absolute;
+        border-radius: 999px;
+        pointer-events: none;
+      }
+
+      .slide::before {
+        top: -84px;
+        right: -96px;
+        width: 320px;
+        height: 320px;
+        background: radial-gradient(
+          circle,
+          rgba(73, 165, 239, 0.11) 0%,
+          rgba(73, 165, 239, 0) 72%
+        );
+      }
+
+      .slide::after {
+        bottom: -104px;
+        left: -46px;
+        width: 280px;
+        height: 280px;
+        background: radial-gradient(
+          circle,
+          rgba(91, 166, 152, 0.1) 0%,
+          rgba(91, 166, 152, 0) 72%
+        );
+      }
+
+      .shell {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        padding: 20px 22px 18px 26px;
+        border: 1px solid var(--line-strong);
+        border-radius: 34px;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: var(--shadow);
+        display: grid;
+        grid-template-rows: auto auto auto 1fr auto;
+        gap: 14px;
+        overflow: hidden;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: start;
+      }
+
+      .title {
+        margin: 0 0 10px;
+        max-width: 920px;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+      }
+
+      .title .accent {
+        color: var(--accent);
+      }
+
+      .hero-strip {
+        display: grid;
+        grid-template-columns: 0.78fr 1.16fr 1.06fr;
+        gap: 12px;
+      }
+
+      .hero-card {
+        min-height: 122px;
+        padding: 16px 18px 14px;
+        border: 1px solid var(--line-strong);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 8px;
+      }
+
+      .hero-card.highlight {
+        background: linear-gradient(
+          135deg,
+          rgba(73, 165, 239, 0.16) 0%,
+          rgba(255, 255, 255, 0.98) 100%
+        );
+      }
+
+      .hero-card.neutral {
+        background: linear-gradient(
+          135deg,
+          rgba(91, 166, 152, 0.12) 0%,
+          rgba(255, 255, 255, 0.98) 100%
+        );
+      }
+
+      .hero-label {
+        margin: 0;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+
+      .hero-card.highlight .hero-label,
+      .hero-card.highlight .hero-value {
+        color: var(--danger);
+      }
+
+      .hero-value {
+        margin: 0;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 0.94;
+        letter-spacing: -0.05em;
+      }
+
+      .hero-copy {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.38;
+        color: var(--ink-muted);
+      }
+
+      .stats-strip {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .stat-card {
+        min-height: 94px;
+        padding: 14px 16px 12px;
+        border: 1px solid var(--line-strong);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 6px;
+      }
+
+      .stat-label {
+        margin: 0;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+
+      .stat-value {
+        margin: 0;
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+      }
+
+      .section-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(73, 165, 239, 0.08);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink);
+      }
+
+      .section-kicker::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      .months-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        min-height: 0;
+      }
+
+      .month-card {
+        min-height: 0;
+        border: 1px solid var(--line-strong);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+
+      .month-head {
+        padding: 14px 16px 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: start;
+      }
+
+      .month-card.january .month-head {
+        background: linear-gradient(135deg, #2f78c7 0%, #49a5ef 100%);
+        color: #ffffff;
+      }
+
+      .month-card.february .month-head {
+        background: linear-gradient(135deg, #5a4898 0%, #8d5fd3 100%);
+        color: #ffffff;
+      }
+
+      .month-card.march .month-head {
+        background: linear-gradient(135deg, #d18a00 0%, #f4a625 100%);
+        color: #ffffff;
+      }
+
+      .month-name {
+        margin: 0 0 4px;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 0.95;
+        letter-spacing: -0.03em;
+      }
+
+      .month-meta {
+        margin: 0;
+        font-size: 11px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.84);
+      }
+
+      .month-total {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+      }
+
+      .incident-list {
+        padding: 14px 16px 16px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .incident-row {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+        align-items: start;
+      }
+
+      .incident-rank {
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 800;
+        color: #ffffff;
+      }
+
+      .month-card.january .incident-rank {
+        background: #49a5ef;
+      }
+
+      .month-card.february .incident-rank {
+        background: #8d5fd3;
+      }
+
+      .month-card.march .incident-rank {
+        background: #f4a625;
+      }
+
+      .incident-title {
+        margin: 0 0 4px;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .incident-detail {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.35;
+        color: var(--ink-muted);
+      }
+
+      .note-panel {
+        padding: 14px 16px;
+        border: 1px solid var(--line-strong);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 8px;
+      }
+
+      .note-title {
+        margin: 0;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+
+      .note-list {
+        margin: 0;
+        padding-left: 18px;
+        display: grid;
+        gap: 6px;
+      }
+
+      .note-item {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.4;
+        color: var(--ink-muted);
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="slide">
+      <div class="shell">
+        <header class="hero">
+          <div>
+            <h1 class="title">
+              Gestion de <span class="accent">ticketera</span> en TeAyudo Q1
+            </h1>
+          </div>
+        </header>
+
+        <section class="hero-strip" aria-label="Resumen principal de ticketera">
+          <article class="hero-card">
+            <p class="hero-label">Tickets totales</p>
+            <p class="hero-value">181</p>
+            <p class="hero-copy">
+              Volumen acumulado observado en la ticketera durante Q1.
+            </p>
+          </article>
+
+          <article class="hero-card highlight">
+            <p class="hero-label">Post Venta</p>
+            <p class="hero-value">93</p>
+            <p class="hero-copy">
+              Tickets — 51,4% del total trimestral. Mas de la mitad de todos los
+              tickets del trimestre corresponde al mismo problema raiz: pedidos
+              que no sincronizan con el Back Office despues del pago.
+            </p>
+          </article>
+
+          <article class="hero-card neutral">
+            <p class="hero-label">Resto plataforma</p>
+            <p class="hero-value">88</p>
+            <p class="hero-copy">
+              Tickets — 48,6% del total. Refleja el comportamiento real del
+              resto de la plataforma, con una tasa de resolucion
+              significativamente mejor y problematicas diversas.
+            </p>
+          </article>
+        </section>
+
+        <section class="stats-strip" aria-label="Estado operativo ticketera">
+          <article class="stat-card">
+            <p class="stat-label">Tickets</p>
+            <p class="stat-value">88</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Abiertos</p>
+            <p class="stat-value">29</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">En espera</p>
+            <p class="stat-value">29</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Cerrados</p>
+            <p class="stat-value">30</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Tiempo prom. resolucion</p>
+            <p class="stat-value">18d</p>
+          </article>
+        </section>
+
+        <div class="section-kicker">Top 3 incidencias por mes</div>
+
+        <section class="months-grid" aria-label="Top incidencias por mes">
+          <article class="month-card january">
+            <div class="month-head">
+              <div>
+                <p class="month-name">Enero</p>
+                <p class="month-meta">20 incidentes / 27 tickets</p>
+              </div>
+              <span class="month-total">27</span>
+            </div>
+            <div class="incident-list">
+              <div class="incident-row">
+                <span class="incident-rank">1</span>
+                <div>
+                  <p class="incident-title">Checkout Paso 3: Metodos de pago</p>
+                  <p class="incident-detail">
+                    7 incidentes — fallas funcionales de pago
+                  </p>
+                </div>
+              </div>
+              <div class="incident-row">
+                <span class="incident-rank">2</span>
+                <div>
+                  <p class="incident-title">No aplica el cupon</p>
+                  <p class="incident-detail">4 incidentes</p>
+                </div>
+              </div>
+              <div class="incident-row">
+                <span class="incident-rank">3</span>
+                <div>
+                  <p class="incident-title">Carrito</p>
+                  <p class="incident-detail">3 incidentes</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="month-card february">
+            <div class="month-head">
+              <div>
+                <p class="month-name">Febrero</p>
+                <p class="month-meta">17 incidentes / 25 tickets</p>
+              </div>
+              <span class="month-total">25</span>
+            </div>
+            <div class="incident-list">
+              <div class="incident-row">
+                <span class="incident-rank">1</span>
+                <div>
+                  <p class="incident-title">Checkout Paso 3: Metodos de pago</p>
+                  <p class="incident-detail">
+                    5 incidentes — fallas funcionales de pago
+                  </p>
+                </div>
+              </div>
+              <div class="incident-row">
+                <span class="incident-rank">2</span>
+                <div>
+                  <p class="incident-title">Home Page / Inicio</p>
+                  <p class="incident-detail">2 incidentes</p>
+                </div>
+              </div>
+              <div class="incident-row">
+                <span class="incident-rank">3</span>
+                <div>
+                  <p class="incident-title">No aplica el cupon / Checkout Paso 1</p>
+                  <p class="incident-detail">2 incidentes cada uno</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="month-card march">
+            <div class="month-head">
+              <div>
+                <p class="month-name">Marzo</p>
+                <p class="month-meta">29 incidentes / 36 tickets</p>
+              </div>
+              <span class="month-total">36</span>
+            </div>
+            <div class="incident-list">
+              <div class="incident-row">
+                <span class="incident-rank">1</span>
+                <div>
+                  <p class="incident-title">Descuento de Empleado</p>
+                  <p class="incident-detail">6 incidentes — 20,7%</p>
+                </div>
+              </div>
+              <div class="incident-row">
+                <span class="incident-rank">2</span>
+                <div>
+                  <p class="incident-title">Home Page / Inicio</p>
+                  <p class="incident-detail">4 incidentes</p>
+                </div>
+              </div>
+              <div class="incident-row">
+                <span class="incident-rank">3</span>
+                <div>
+                  <p class="incident-title">
+                    Carrito / Checkout Paso 3 / Login
+                  </p>
+                  <p class="incident-detail">3 incidentes cada uno</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="note-panel" aria-label="Mejores practicas ticketera">
+          <p class="note-title">Mayores dolores y mejores practicas para carga de ticketera</p>
+          <ul class="note-list">
+            <li class="note-item">
+              Explicitar correctamente el formato de negocio donde sucede el
+              bug.
+            </li>
+            <li class="note-item">
+              Adjuntar la mayor cantidad de evidencia que respalde el reporte,
+              idealmente video, captura e informacion relevante.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
